@@ -1,0 +1,171 @@
+Labed coordenada: x: 731 y: 312 Mask: 1
+Result coordenada: x0: 712 x1: 744 y0: 272 y1: 310 Mask: 1
+Number success: 0
+Number people: 1
+---------------------
+Labed coordenada: x: 731 y: 312 Mask: 1
+Result coordenada: x0: 1067 x1: 1115 y0: 259 y1: 321 Mask: 1
+Number success: 0
+Number people: 1
+---------------------
+Labed coordenada: x: 731 y: 312 Mask: 1
+Result coordenada: x0: 1134 x1: 1144 y0: 278 y1: 289 Mask: 1
+Number success: 0
+Number people: 1
+---------------------
+Labed coordenada: x: 731 y: 312 Mask: 1
+Result coordenada: x0: 1162 x1: 1175 y0: 278 y1: 289 Mask: 1
+Number success: 0
+Number people: 1
+---------------------
+Labed coordenada: x: 731 y: 312 Mask: 1
+Result coordenada: x0: 1154 x1: 1162 y0: 289 y1: 299 Mask: 1
+Number success: 0
+Number people: 1
+---------------------
+-----Change person ------
+Labed coordenada: x: 1089 y: 299 Mask: 1
+Result coordenada: x0: 712 x1: 744 y0: 272 y1: 310 Mask: 1
+Number success: 0
+Number people: 2
+---------------------
+Labed coordenada: x: 1089 y: 299 Mask: 1
+Result coordenada: x0: 1067 x1: 1115 y0: 259 y1: 321 Mask: 1
+Success
+Number success: 1
+Number people: 2
+---------------------
+Labed coordenada: x: 1089 y: 299 Mask: 1
+Result coordenada: x0: 1134 x1: 1144 y0: 278 y1: 289 Mask: 1
+Number success: 1
+Number people: 2
+---------------------
+Labed coordenada: x: 1089 y: 299 Mask: 1
+Result coordenada: x0: 1162 x1: 1175 y0: 278 y1: 289 Mask: 1
+Number success: 1
+Number people: 2
+---------------------
+Labed coordenada: x: 1089 y: 299 Mask: 1
+Result coordenada: x0: 1154 x1: 1162 y0: 289 y1: 299 Mask: 1
+Number success: 1
+Number people: 2
+---------------------
+-----Change person ------
+Labed coordenada: x: 1365 y: 353 Mask: 1
+Result coordenada: x0: 712 x1: 744 y0: 272 y1: 310 Mask: 1
+Number success: 1
+Number people: 3
+---------------------
+Labed coordenada: x: 1365 y: 353 Mask: 1
+Result coordenada: x0: 1067 x1: 1115 y0: 259 y1: 321 Mask: 1
+Number success: 1
+Number people: 3
+---------------------
+Labed coordenada: x: 1365 y: 353 Mask: 1
+Result coordenada: x0: 1134 x1: 1144 y0: 278 y1: 289 Mask: 1
+Number success: 1
+Number people: 3
+---------------------
+Labed coordenada: x: 1365 y: 353 Mask: 1
+Result coordenada: x0: 1162 x1: 1175 y0: 278 y1: 289 Mask: 1
+Number success: 1
+Number people: 3
+---------------------
+Labed coordenada: x: 1365 y: 353 Mask: 1
+Result coordenada: x0: 1154 x1: 1162 y0: 289 y1: 299 Mask: 1
+Number success: 1
+Number people: 3
+---------------------
+-----Change person ------
+============Change file==================
+Labed coordenada: x: 755 y: 304 Mask: 1
+Result coordenada: x0: 1120 x1: 1172 y0: 250 y1: 317 Mask: 1
+Number success: 0
+Number people: 1
+---------------------
+Labed coordenada: x: 755 y: 304 Mask: 1
+Result coordenada: x0: 1030 x1: 1055 y0: 277 y1: 309 Mask: 0
+Number success: 0
+Number people: 1
+---------------------
+Labed coordenada: x: 755 y: 304 Mask: 1
+Result coordenada: x0: 736 x1: 771 y0: 265 y1: 309 Mask: 1
+Success
+Number success: 1
+Number people: 1
+---------------------
+Labed coordenada: x: 755 y: 304 Mask: 1
+Result coordenada: x0: 1028 x1: 1056 y0: 273 y1: 307 Mask: 1
+Number success: 1
+Number people: 1
+---------------------
+-----Change person ------
+Labed coordenada: x: 1041 y: 305 Mask: 1
+Result coordenada: x0: 1120 x1: 1172 y0: 250 y1: 317 Mask: 1
+Number success: 1
+Number people: 2
+---------------------
+Labed coordenada: x: 1041 y: 305 Mask: 1
+Result coordenada: x0: 1030 x1: 1055 y0: 277 y1: 309 Mask: 0
+Number success: 1
+Number people: 2
+---------------------
+Labed coordenada: x: 1041 y: 305 Mask: 1
+Result coordenada: x0: 736 x1: 771 y0: 265 y1: 309 Mask: 1
+Number success: 1
+Number people: 2
+---------------------
+Labed coordenada: x: 1041 y: 305 Mask: 1
+Result coordenada: x0: 1028 x1: 1056 y0: 273 y1: 307 Mask: 1
+Success
+Number success: 2
+Number people: 2
+---------------------
+-----Change person ------
+Labed coordenada: x: 1149 y: 296 Mask: 1
+Result coordenada: x0: 1120 x1: 1172 y0: 250 y1: 317 Mask: 1
+Success
+Number success: 3
+Number people: 3
+---------------------
+Labed coordenada: x: 1149 y: 296 Mask: 1
+Result coordenada: x0: 1030 x1: 1055 y0: 277 y1: 309 Mask: 0
+Number success: 3
+Number people: 3
+---------------------
+Labed coordenada: x: 1149 y: 296 Mask: 1
+Result coordenada: x0: 736 x1: 771 y0: 265 y1: 309 Mask: 1
+Number success: 3
+Number people: 3
+---------------------
+Labed coordenada: x: 1149 y: 296 Mask: 1
+Result coordenada: x0: 1028 x1: 1056 y0: 273 y1: 307 Mask: 1
+Number success: 3
+Number people: 3
+---------------------
+-----Change person ------
+Labed coordenada: x: 1558 y: 349 Mask: 1
+Result coordenada: x0: 1120 x1: 1172 y0: 250 y1: 317 Mask: 1
+Number success: 3
+Number people: 4
+---------------------
+Labed coordenada: x: 1558 y: 349 Mask: 1
+Result coordenada: x0: 1030 x1: 1055 y0: 277 y1: 309 Mask: 0
+Number success: 3
+Number people: 4
+---------------------
+Labed coordenada: x: 1558 y: 349 Mask: 1
+Result coordenada: x0: 736 x1: 771 y0: 265 y1: 309 Mask: 1
+Number success: 3
+Number people: 4
+---------------------
+Labed coordenada: x: 1558 y: 349 Mask: 1
+Result coordenada: x0: 1028 x1: 1056 y0: 273 y1: 307 Mask: 1
+Number success: 3
+Number people: 4
+---------------------
+-----Change person ------
+============Change file==================
+Number total success: 4
+Number total people: 7
+Hit rate: 57.14285714285714
