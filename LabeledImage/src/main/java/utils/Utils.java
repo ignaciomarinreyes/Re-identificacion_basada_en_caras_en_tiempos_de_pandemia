@@ -22,32 +22,9 @@ public class Utils {
     public Utils(String nameFile, String path) {
         this.path = path;
         this.nameFile = nameFile;
-        initFileWrite();
-        initFileRead();
     }
 
-    public void initFileWrite() {
-        int pos = nameFile.lastIndexOf(".");
-        try {
-            this.fileWrite = new FileWriter(this.path + "/" + nameFile.substring(0, pos) + "_tagged.txt");
-            this.pw = new PrintWriter(fileWrite);
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
-
-    private void initFileRead() {
-        int pos = nameFile.lastIndexOf(".");
-        fileRead = new File(this.path + "/" + nameFile.substring(0, pos) + "_result.txt");
-        try {
-            fr = new FileReader(fileRead);
-        } catch (FileNotFoundException ex) {
-            ex.printStackTrace();
-        }
-        br = new BufferedReader(fr);
-    }
-
-    public void changeFileRead(String nameFile) {
+    public boolean changeFileRead(String nameFile) {
         int pos = nameFile.lastIndexOf(".");
         try {
             if (null != fr) {
@@ -57,12 +34,17 @@ public class Utils {
             e2.printStackTrace();
         }
         fileRead = new File(this.path + "/" + nameFile.substring(0, pos) + "_result.txt");
-        try {
-            fr = new FileReader(fileRead);
-        } catch (FileNotFoundException ex) {
-            ex.printStackTrace();
+        if(fileRead.exists()){
+            try {
+                fr = new FileReader(fileRead);
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace();
+            }
+            br = new BufferedReader(fr);
+            return true;
+        } else{
+            return false;
         }
-        br = new BufferedReader(fr);
     }
 
     public void changeFileWrite(String nameFile) {

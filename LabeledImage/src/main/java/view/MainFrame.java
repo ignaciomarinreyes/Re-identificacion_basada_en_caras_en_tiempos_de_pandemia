@@ -35,18 +35,15 @@ public class MainFrame extends javax.swing.JFrame {
     
     public MainFrame() {
         initComponents();
+        screen.setEditable(false);
         setFocusable(true);
         setSize(1850, 1200);
         listFiles();
-        printImage(positionImage);
         this.utils = new Utils(files[positionImage].getName(), path);
-        this.listLine = utils.readAllFile();
-        if(listLine.size()!= 0){
-            String line = this.listLine.get(cursorLine);
-            this.words = line.split(" ");
-            printImageWithBox(positionImage);
-            cursorLine++;
-            if(!line.equals("")) control++;
+        if(positionImage < files.length){
+            printNextImage();                            
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(this,"Completado el etiquetado de todas las imágenes","Mensaje",javax.swing.JOptionPane.ERROR_MESSAGE);
         }
         CerrarVentana();
     }
@@ -105,52 +102,64 @@ public class MainFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_N && control == 0){
+    
+    private void printNextBox(){
+        String line = this.listLine.get(cursorLine);
+        this.words = line.split(" ");
+        printImageWithBox(positionImage);
+        cursorLine++;
+        if(!line.equals("")) control++;
+    }
+    
+    private void printNextImage(){
+        if(utils.changeFileRead(files[positionImage].getName())){
+            utils.changeFileWrite(files[positionImage].getName());
+            this.listLine = utils.readAllFile();
+            cursorLine = 0;
+            if(listLine.size()!= 0){
+                printNextBox();
+            }
+            screen.setText("\n=============================== Siguiente Fichero ===============================\n");  
+        } else {
+            positionImage++;
             if(positionImage < files.length){
-                if(cursorLine < listLine.size()){
-                    String line = this.listLine.get(cursorLine);
-                    this.words = line.split(" ");
-                    printImageWithBox(positionImage);
-                    cursorLine++;
-                    if(!line.equals("")) control++;
-                } else {
-                    positionImage++;
-                    if(positionImage < files.length){
-                        printImage(positionImage);
-                        utils.changeFileWrite(files[positionImage].getName());
-                        utils.changeFileRead(files[positionImage].getName());
-                        this.listLine = utils.readAllFile();
-                        cursorLine = 0;
-                        if(listLine.size()!= 0){
-                            String line = this.listLine.get(cursorLine);
-                            this.words = line.split(" ");
-                            printImageWithBox(positionImage);
-                            cursorLine++;
-                            if(!line.equals("")) control++;  
-                        }
-                        screen.append("\n=============================== Siguiente Fichero ===============================\n");         
-                    }                   
-                }
-            }else {
+                printNextImage();   
+                return;
+            } else {
                 javax.swing.JOptionPane.showMessageDialog(this,"Completado el etiquetado de todas las imágenes","Mensaje",javax.swing.JOptionPane.ERROR_MESSAGE);
             }
-        } 
+        }
+    }   
+    
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_N && control == 0){
+            if(cursorLine < listLine.size()){
+               printNextBox();
+            } else {
+                positionImage++;
+                if(positionImage < files.length){
+                    printNextImage();                            
+                } else {
+                     javax.swing.JOptionPane.showMessageDialog(this,"Completado el etiquetado de todas las imágenes","Mensaje",javax.swing.JOptionPane.ERROR_MESSAGE);
+                }
+            } 
+        }
+        
         if (evt.getKeyCode()==KeyEvent.VK_S && control == 1){
             utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
-            screen.append(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
+            screen.setText(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
             control = 0;
         }
+        
         if (evt.getKeyCode()==KeyEvent.VK_A && control == 1){
             utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
-            screen.append(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
+            screen.setText(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
             control = 0;
         }
         
         if (evt.getKeyCode()==KeyEvent.VK_D && control == 1){
             utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
-            screen.append(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
+            screen.setText(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
             control = 0;
         }
     }//GEN-LAST:event_formKeyPressed
@@ -159,25 +168,6 @@ public class MainFrame extends javax.swing.JFrame {
         File dir = new File(this.path);
         files = dir.listFiles(new Filter());
         Arrays.sort(files);        
-    }
-
-    private void printImage(int positionImage) {
-        java.awt.image.BufferedImage image = null;
-        File file = files[positionImage];
-        try{
-            image = ImageIO.read(file); 
-        }catch(IOException ie){
-            javax.swing.JOptionPane.showMessageDialog(this,"Error reading image file","Error",javax.swing.JOptionPane.ERROR_MESSAGE);
-        }
-        int widthScaled = (int) (width / factorScale);
-        int heightScaled = (int) (height / factorScale);
-        Image img = image.getScaledInstance(widthScaled,heightScaled,java.awt.Image.SCALE_SMOOTH);       
-        ImageIcon newIcon = new ImageIcon(img);
-        String pictureName = file.getName();
-        int pos = pictureName.lastIndexOf(".");  
-        String caption = pictureName.substring(0,pos);
-        this.image.setIcon(newIcon);                   
-        titleImage.setText(positionImage + " " + caption);                      
     }
     
     private void printImageWithBox(int positionImage) {
