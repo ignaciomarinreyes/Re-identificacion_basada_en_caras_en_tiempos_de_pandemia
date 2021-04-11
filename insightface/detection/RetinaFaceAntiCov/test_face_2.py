@@ -9,7 +9,8 @@ from retinaface_cov import RetinaFaceCoV
 thresh = 0.8
 mask_thresh = 0.2
 gpuid = 0
-path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
 detector = RetinaFaceCoV("/content/gdrive/My Drive/TFG/insightface/detection/RetinaFaceAntiCov/model/mnet_cov2", 0, gpuid, 'net3l')
 for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(glob.glob(path + "*.jpg"))):
     print("###################################")
@@ -62,8 +63,12 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                     widthXBox = box[2] - box[0]
                     beginYBox = beginY + box[1]
                     heightYBox = box[3] - box[1]
-                    print("Limit box: " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + "--->"  + str(colorBox))
-                    fileOutput.write(str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + " " + str(colorBox) + "\n")
+                    if(heightYBox > 30):
+                        print("Limit box: " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + "--->" + str(colorBox))
+                        fileOutput.write(str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + " " + str(colorBox) + " \n")
                 print("Box ready: "  + path + "Salida_frame_" + timeFile + "_result.txt")
     fileOutput.close()
+    sizefile = os.stat(path + "Salida_frame_" + timeFile + "_result.txt").st_size
+    if(sizefile == 0):
+        os.remove(path + "Salida_frame_" + timeFile + "_result.txt")
     fileBody.close()

@@ -11,10 +11,17 @@ import utils.Utils;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.awt.Graphics2D;
+import java.awt.Color;
+import java.awt.Rectangle;
+import java.awt.BasicStroke;
+import java.util.Arrays;
 
 public class MainFrame extends javax.swing.JFrame {
 
-    private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba";
+    //private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba";
+    private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result";
     private File[] files;
     private Utils utils;
     int width = 1920;
@@ -22,17 +29,27 @@ public class MainFrame extends javax.swing.JFrame {
     int positionImage = 0;
     private double factorScale = 1.3;
     private int control = 0;
+    private int cursorLine = 0;
+    private ArrayList<String> listLine;
+    private String[] words;
     
     public MainFrame() {
         initComponents();
         setFocusable(true);
         setSize(1850, 1200);
         listFiles();
-        printImage(0);
+        printImage(positionImage);
         this.utils = new Utils(files[positionImage].getName(), path);
+        this.listLine = utils.readAllFile();
+        if(listLine.size()!= 0){
+            String line = this.listLine.get(cursorLine);
+            this.words = line.split(" ");
+            printImageWithBox(positionImage);
+            cursorLine++;
+            if(!line.equals("")) control++;
+        }
         CerrarVentana();
     }
-
    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -44,11 +61,6 @@ public class MainFrame extends javax.swing.JFrame {
         screen = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                formMouseClicked(evt);
-            }
-        });
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -94,53 +106,59 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
-        if(control == 0){
-            int x = evt.getX() - image.getLocation().x;
-            int y = evt.getY() - image.getLocation().y - 25;
-            int xWithOutScaled = (int) (factorScale  * x);
-            int yWithOutScaled = (int) (factorScale * y);
-            utils.writeFile(xWithOutScaled + " " + yWithOutScaled + " ");
-            screen.append(xWithOutScaled + " " + yWithOutScaled + " ");
-            control++;
-        }
-    }//GEN-LAST:event_formMouseClicked
-
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         if(evt.getKeyCode()==KeyEvent.VK_N && control == 0){
-            if(positionImage < files.length - 1){
-                positionImage++;
-                printImage(positionImage);
-                utils.changeFile(files[positionImage].getName());
-                screen.append("\n=============================== Siguiente Fichero ===============================\n");
-            } else{
+            if(positionImage < files.length){
+                if(cursorLine < listLine.size()){
+                    String line = this.listLine.get(cursorLine);
+                    this.words = line.split(" ");
+                    printImageWithBox(positionImage);
+                    cursorLine++;
+                    if(!line.equals("")) control++;
+                } else {
+                    positionImage++;
+                    if(positionImage < files.length){
+                        printImage(positionImage);
+                        utils.changeFileWrite(files[positionImage].getName());
+                        utils.changeFileRead(files[positionImage].getName());
+                        this.listLine = utils.readAllFile();
+                        cursorLine = 0;
+                        if(listLine.size()!= 0){
+                            String line = this.listLine.get(cursorLine);
+                            this.words = line.split(" ");
+                            printImageWithBox(positionImage);
+                            cursorLine++;
+                            if(!line.equals("")) control++;  
+                        }
+                        screen.append("\n=============================== Siguiente Fichero ===============================\n");         
+                    }                   
+                }
+            }else {
                 javax.swing.JOptionPane.showMessageDialog(this,"Completado el etiquetado de todas las imágenes","Mensaje",javax.swing.JOptionPane.ERROR_MESSAGE);
             }
         } 
         if (evt.getKeyCode()==KeyEvent.VK_S && control == 1){
-            utils.writeFile("1 ");
-            screen.append("1 ");
-            control++;
+            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
+            screen.append(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
+            control = 0;
         }
         if (evt.getKeyCode()==KeyEvent.VK_A && control == 1){
-            utils.writeFile("0 ");
-            screen.append("0 ");
-            control++;
-        }
-        if (evt.getKeyCode() >= 48 && evt.getKeyCode() <= 57 && control == 2){    
-            utils.writeFile(""+evt.getKeyChar());
-            screen.append(""+evt.getKeyChar());          
-        }
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER && control == 2){
+            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
+            screen.append(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
             control = 0;
-            utils.writeFile("\n");
-            screen.append("\n");
+        }
+        
+        if (evt.getKeyCode()==KeyEvent.VK_D && control == 1){
+            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
+            screen.append(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
+            control = 0;
         }
     }//GEN-LAST:event_formKeyPressed
 
     private void listFiles() {
         File dir = new File(this.path);
         files = dir.listFiles(new Filter());
+        Arrays.sort(files);        
     }
 
     private void printImage(int positionImage) {
@@ -153,13 +171,39 @@ public class MainFrame extends javax.swing.JFrame {
         }
         int widthScaled = (int) (width / factorScale);
         int heightScaled = (int) (height / factorScale);
-        Image img = image.getScaledInstance(widthScaled,heightScaled,java.awt.Image.SCALE_SMOOTH);
+        Image img = image.getScaledInstance(widthScaled,heightScaled,java.awt.Image.SCALE_SMOOTH);       
         ImageIcon newIcon = new ImageIcon(img);
         String pictureName = file.getName();
         int pos = pictureName.lastIndexOf(".");  
         String caption = pictureName.substring(0,pos);
         this.image.setIcon(newIcon);                   
         titleImage.setText(positionImage + " " + caption);                      
+    }
+    
+    private void printImageWithBox(int positionImage) {
+        java.awt.image.BufferedImage image = null;
+        File file = files[positionImage];
+        try{
+            image = ImageIO.read(file); 
+        }catch(IOException ie){
+            javax.swing.JOptionPane.showMessageDialog(this,"Error reading image file","Error",javax.swing.JOptionPane.ERROR_MESSAGE);
+        }
+        int widthScaled = (int) (width / factorScale);
+        int heightScaled = (int) (height / factorScale);
+        Image img = image.getScaledInstance(widthScaled,heightScaled,java.awt.Image.SCALE_SMOOTH);
+        
+        Graphics2D graph = image.createGraphics();
+        graph.setColor(Color.RED);
+        graph.setStroke(new BasicStroke(5));
+        if(!words[0].equals("")) graph.drawRect(Integer.parseInt(words[0]), Integer.parseInt(words[1]), Integer.parseInt(words[2]), Integer.parseInt(words[3])); // int x, int y, int width, int height;
+        graph.dispose();
+        
+        ImageIcon newIcon = new ImageIcon(img);
+        String pictureName = file.getName();
+        int pos = pictureName.lastIndexOf(".");  
+        String caption = pictureName.substring(0,pos);
+        this.image.setIcon(newIcon);                   
+        titleImage.setText(positionImage + " " + caption);             
     }
     
     private class Filter implements FilenameFilter{
@@ -172,11 +216,13 @@ public class MainFrame extends javax.swing.JFrame {
     public void CerrarVentana(){
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
-                utils.closeLastFile();
+                utils.closeLastFileWrite();
+                utils.closeLastFileRead();
                 System.exit(0);
             }
         });
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel image;

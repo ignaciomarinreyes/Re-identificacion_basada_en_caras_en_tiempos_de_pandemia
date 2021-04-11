@@ -1,38 +1,82 @@
 package utils;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 public class Utils {
 
-    private FileWriter fichero;
+    private FileWriter fileWrite;
     private PrintWriter pw;
     private String path;
+    private String nameFile;
+    private FileReader fr;
+    private File fileRead;
+    private BufferedReader br;
 
     public Utils(String nameFile, String path) {
         this.path = path;
-        int pos = nameFile.lastIndexOf(".");  
+        this.nameFile = nameFile;
+        initFileWrite();
+        initFileRead();
+    }
+
+    public void initFileWrite() {
+        int pos = nameFile.lastIndexOf(".");
         try {
-            this.fichero = new FileWriter(this.path + "/" + nameFile.substring(0,pos) + "_tagged.txt");
-            this.pw = new PrintWriter(fichero);
+            this.fileWrite = new FileWriter(this.path + "/" + nameFile.substring(0, pos) + "_tagged.txt");
+            this.pw = new PrintWriter(fileWrite);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
-    public void changeFile(String nameFile) {
-        int pos = nameFile.lastIndexOf(".");  
+    private void initFileRead() {
+        int pos = nameFile.lastIndexOf(".");
+        fileRead = new File(this.path + "/" + nameFile.substring(0, pos) + "_result.txt");
         try {
-            if (null != fichero) {
-                fichero.close();
+            fr = new FileReader(fileRead);
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        br = new BufferedReader(fr);
+    }
+
+    public void changeFileRead(String nameFile) {
+        int pos = nameFile.lastIndexOf(".");
+        try {
+            if (null != fr) {
+                fr.close();
+            }
+        } catch (Exception e2) {
+            e2.printStackTrace();
+        }
+        fileRead = new File(this.path + "/" + nameFile.substring(0, pos) + "_result.txt");
+        try {
+            fr = new FileReader(fileRead);
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        br = new BufferedReader(fr);
+    }
+
+    public void changeFileWrite(String nameFile) {
+        int pos = nameFile.lastIndexOf(".");
+        try {
+            if (null != fileWrite) {
+                fileWrite.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         try {
-            this.fichero = new FileWriter(this.path + "/" + nameFile.substring(0,pos) + "_tagged.txt");
-            this.pw = new PrintWriter(fichero);
+            this.fileWrite = new FileWriter(this.path + "/" + nameFile.substring(0, pos) + "_tagged.txt");
+            this.pw = new PrintWriter(fileWrite);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,17 +86,44 @@ public class Utils {
         pw.print(texto);
     }
 
+    public ArrayList<String> readAllFile() {
+        ArrayList<String> listLine = new ArrayList<String>();
+        try {
+            String line;
+            while ((line = br.readLine()) != null) {
+                listLine.add(line);
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return listLine;
+    }
+
     public void nextLineFile() {
         pw.println();
     }
 
-    public void closeLastFile() {
+    public void closeLastFileWrite() {
         try {
-            if (null != fichero) {
-                fichero.close();
+            if (null != fileWrite) {
+                fileWrite.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void closeLastFileRead() {
+        try {
+            if (null != fr) {
+                fr.close();
+            }
+        } catch (Exception e2) {
+            e2.printStackTrace();
+        }
+    }
+    
+    public void printBox(String[] words){
+        
     }
 }
