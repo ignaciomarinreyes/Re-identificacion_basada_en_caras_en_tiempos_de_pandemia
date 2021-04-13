@@ -24,6 +24,8 @@ def accuracyWearOrNotMask():
     print(vTrue)
     print("======Metrics=====")
     print(mt.accuracy_score(vTrue, vPred))
+    print("===Confusion matrix =====")
+    print(mt.confusion_matrix(vTrue,vPred))
 
 def accuracyWearMask():
     print("========WearMask========")
@@ -44,6 +46,7 @@ def accuracyWearMask():
     print(vTrue)
     print("======Metrics=====")
     print(mt.accuracy_score(vTrue, vPred))
+
 
 def accuracyNotWearMask():
     print("========NotWearMask========")
