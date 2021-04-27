@@ -9,8 +9,8 @@ from retinaface_cov import RetinaFaceCoV
 thresh = 0.8
 mask_thresh = 0.2
 gpuid = 0
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
-path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
 detector = RetinaFaceCoV("/content/gdrive/My Drive/TFG/insightface/detection/RetinaFaceAntiCov/model/mnet_cov2", 0, gpuid, 'net3l')
 for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(glob.glob(path + "*.jpg"))):
     print("###################################")
@@ -23,9 +23,9 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
     for line in fileBody:
         scales = [640, 1080]
         values = line.split(" ")
-        if (len(values) == 6 and values[4] == '1'):
+        if (len(values) == 5):
             print("===========================================")
-            print(values[0] + " " + values[1] + " " + values[2] + " " + values[3] + " " + values[4] + " " + values[5])
+            print(values[0] + " " + values[1] + " " + values[2] + " " + values[3] + " " + values[4])
             beginX, endX, beginY, endY = int(values[0]), int(values[0]) + int(values[2]), int(values[1]), int(
                 values[1]) + int(values[3])
             heihtCropImage = int(endY) - int(beginY)

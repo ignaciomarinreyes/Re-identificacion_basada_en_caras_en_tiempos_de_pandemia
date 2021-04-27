@@ -30,7 +30,7 @@ flags.DEFINE_string('framework', 'tf', '(tf, tflite, trt')
 flags.DEFINE_string('weights', './checkpoints/yolov4-416',
                     'path to weights file')
 flags.DEFINE_integer('size', 416, 'resize images to')
-flags.DEFINE_boolean('tiny', False, 'yolo or yolo-tiny')
+flags.DEFINE_boolean('tiny', False, 'yolo or yolo-t0iny')
 flags.DEFINE_string('model', 'yolov4', 'yolov3 or yolov4')
 flags.DEFINE_string('video', './data/video/test.mp4', 'path to input video or set to 0 for webcam')
 flags.DEFINE_string('output', None, 'path to output video')
@@ -38,7 +38,7 @@ flags.DEFINE_string('output_format', 'XVID', 'codec used in VideoWriter when sav
 flags.DEFINE_float('iou', 0.45, 'iou threshold')
 flags.DEFINE_float('score', 0.50, 'score threshold')
 flags.DEFINE_boolean('dont_show', True, 'dont show video output')
-flags.DEFINE_boolean('info', False, 'show detailed info of tracked objects')
+flags.DEFINE_boolean('info', True, 'show detailed info of tracked objects')
 flags.DEFINE_boolean('count', False, 'count objects being tracked on screen')
 
 def main(_argv):
@@ -96,6 +96,8 @@ def main(_argv):
     frame_num = 0
     # while video is running
     for pathJpg in sorted(glob.glob(path + "*.jpg")):
+        init = pathJpg.find("Salida_frame_") + 13
+        timeJpg = pathJpg[init: init + 12]
         frame = cv2.imread(pathJpg)
 
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -161,7 +163,7 @@ def main(_argv):
         allowed_classes = list(class_names.values())
         
         # custom allowed classes (uncomment line below to customize tracker for only people)
-        #allowed_classes = ['person']
+        allowed_classes = ['person']
 
         # loop through objects and use class index to get class name, allow only classes in allowed_classes list
         names = []
@@ -201,6 +203,8 @@ def main(_argv):
         tracker.predict()
         tracker.update(detections)
 
+        fileOutput = open(path + "Salida_frame_" + timeJpg + "_bodies.txt", "w")
+        print(path + "Salida_frame_" + timeJpg + "_bodies.txt")
         # update tracks
         for track in tracker.tracks:
             if not track.is_confirmed() or track.time_since_update > 1:
@@ -215,10 +219,14 @@ def main(_argv):
             cv2.rectangle(frame, (int(bbox[0]), int(bbox[1]-30)), (int(bbox[0])+(len(class_name)+len(str(track.track_id)))*17, int(bbox[1])), color, -1)
             cv2.putText(frame, class_name + "-" + str(track.track_id),(int(bbox[0]), int(bbox[1]-10)),0, 0.75, (255,255,255),2)
 
+            # write file
+            widthBox = int(bbox[2]) - int(bbox[0])
+            heightBox = int(bbox[3]) - int(bbox[1])
+            fileOutput.write(str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " " + str(track.track_id) + "\n")
         # if enable info flag then print details about each track
             if FLAGS.info:
                 print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(track.track_id), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))
-
+        fileOutput.close()
         # calculate frames per second of running detections
         fps = 1.0 / (time.time() - start_time)
         print("FPS: %.2f" % fps)
@@ -232,6 +240,7 @@ def main(_argv):
         if FLAGS.output:
             out.write(result)
         if cv2.waitKey(1) & 0xFF == ord('q'): break
+
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':

@@ -2,8 +2,8 @@ import glob
 import numpy as np
 import sklearn.metrics as mt
 
-#path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba/"
-path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
 
 def accuracyWearOrNotMask():
     print("========WearOrNotMask========")

@@ -20,8 +20,8 @@ import java.util.Arrays;
 
 public class MainFrame extends javax.swing.JFrame {
 
-    //private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba";
-    private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result";
+    private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba";
+    //private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result";
     private File[] files;
     private Utils utils;
     int width = 1920;
