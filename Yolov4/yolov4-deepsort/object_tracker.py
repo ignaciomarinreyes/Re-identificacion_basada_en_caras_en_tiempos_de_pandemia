@@ -222,7 +222,7 @@ def main(_argv):
             # write file
             widthBox = int(bbox[2]) - int(bbox[0])
             heightBox = int(bbox[3]) - int(bbox[1])
-            fileOutput.write(str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " " + str(track.track_id) + "\n")
+            fileOutput.write(str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " " + str(track.track_id) + " \n")
         # if enable info flag then print details about each track
             if FLAGS.info:
                 print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(track.track_id), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))

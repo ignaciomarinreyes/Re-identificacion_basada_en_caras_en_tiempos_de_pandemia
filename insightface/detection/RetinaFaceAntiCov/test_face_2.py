@@ -19,11 +19,11 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
     timeFile = pathTxtBody[init: init + 12]
     fileBody = open(pathTxtBody)
     img = cv2.imread(pathJpg)
-    fileOutput = open(path + "Salida_frame_" + timeFile + "_result.txt", "w")
+    fileOutput = open(path + "Salida_frame_" + timeFile + "_faces.txt", "w")
     for line in fileBody:
         scales = [640, 1080]
         values = line.split(" ")
-        if (len(values) == 5):
+        if (len(values) == 6):
             print("===========================================")
             print(values[0] + " " + values[1] + " " + values[2] + " " + values[3] + " " + values[4])
             beginX, endX, beginY, endY = int(values[0]), int(values[0]) + int(values[2]), int(values[1]), int(
@@ -47,28 +47,35 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                                                do_flip=flip)
             if faces is not None:
                 print('find', faces.shape[0], 'faces')
-                for i in range(faces.shape[0]):
-                    face = faces[i]
-                    box = face[0:4].astype(np.int)
-                    mask = face[5]
-                    print(i, box, mask)
-                    colorBox = 0
-                    if mask >= mask_thresh:
-                        color = (0, 0, 255) # Black color in BGR, red
-                        colorBox = 1
-                    else:
-                        color = (0, 255, 0) # green
+                if faces.shape[0] == 0:
+                    fileOutput.write("ND ND ND ND ND " + values[4] + " ND ND ND ND ND ND ND ND ND ND \n")
+                else:
+                    for i in range(faces.shape[0]):
+                        landmark5 = landmarks[i].astype(np.int)
+                        face = faces[i]
+                        box = face[0:4].astype(np.int)
+                        mask = face[5]
+                        print(i, box, mask)
                         colorBox = 0
-                    beginXBox = beginX + box[0]
-                    widthXBox = box[2] - box[0]
-                    beginYBox = beginY + box[1]
-                    heightYBox = box[3] - box[1]
-                    if(heightYBox > 30):
-                        print("Limit box: " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + "--->" + str(colorBox))
-                        fileOutput.write(str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + " " + str(colorBox) + " \n")
-                print("Box ready: "  + path + "Salida_frame_" + timeFile + "_result.txt")
+                        if mask >= mask_thresh:
+                            color = (0, 0, 255) # Black color in BGR, red
+                            colorBox = 1
+                        else:
+                            color = (0, 255, 0) # green
+                            colorBox = 0
+                        beginXBox = beginX + box[0]
+                        widthXBox = box[2] - box[0]
+                        beginYBox = beginY + box[1]
+                        heightYBox = box[3] - box[1]
+                        if(heightYBox > 30):
+                            print("Limit box: " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + "--->" + str(colorBox) + " " + str(values[4]))
+                            fileOutput.write(str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + " " + str(colorBox) + " " + str(values[4]) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " "  + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " "  + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " "  + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
+                    print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
     fileOutput.close()
-    sizefile = os.stat(path + "Salida_frame_" + timeFile + "_result.txt").st_size
+    sizefile = os.stat(path + "Salida_frame_" + timeFile + "_faces.txt").st_size
     if(sizefile == 0):
-        os.remove(path + "Salida_frame_" + timeFile + "_result.txt")
+        os.remove(path + "Salida_frame_" + timeFile + "_faces.txt")
     fileBody.close()
+
+
+#+ str(landmarks[0]) + " " + str(landmarks[1]) + " " + str(landmarks[2]) + " " + str(landmarks[3]) + " " + str(landmarks[4]) +
