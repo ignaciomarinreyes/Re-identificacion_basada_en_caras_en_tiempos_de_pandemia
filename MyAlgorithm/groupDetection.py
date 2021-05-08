@@ -30,9 +30,9 @@ for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
             if vGeneralId[int(fields[5])] is not None:
                 vContent = vGeneralId[int(fields[5])].copy()
                 vContent[1] += 1
-                if fields[4] == 1:
+                if fields[4] == '1':
                     vContent[4] += 1
-                if fields[4] == 0:
+                if fields[4] == '0':
                     vContent[5] += 1
                 if fields[4] == 'ND':
                     vContent[6] += 1
@@ -45,7 +45,9 @@ for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
     i+=1
 
 print(vGeneralId)
-#fileGroupDetection = open(path + "groupDetection.txt", "w")
-#fileGroupDetection.write("\n")
+fileGroupDetection = open(path + "groupDetection.txt", "w")
+for values in vGeneralId:
+    if values is not None:
+        fileGroupDetection.write(str(values[0]) + " " + str(values[1]) + " " + str(values[2]) + " " + str(values[3]) + " " + str(values[4]) + " " + str(values[5]) + " " + str(values[6]) + "\n")
 
 
