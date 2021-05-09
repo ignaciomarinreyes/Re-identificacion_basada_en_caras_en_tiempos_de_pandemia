@@ -17,9 +17,9 @@ siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
 
 GroupDetection
 ===============
-id x y ancho alto nºaparaciones InicioFrame FinFrame nºconMascarilla nºsinMascarilla nºNoDeteccionesCara
+id tiempoFrameDelÚltimoFaceBoxDetectado x y ancho alto InicioFrame FinFrame  nºaparaciones nºconMascarilla nºsinMascarilla nºNoDeteccionesCara 
 
-x y ancho alto de la cara
+x y ancho alto del último faceBox detectado
 
 
 

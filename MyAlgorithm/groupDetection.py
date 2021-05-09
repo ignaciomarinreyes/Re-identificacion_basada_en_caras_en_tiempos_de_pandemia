@@ -43,18 +43,25 @@ for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
             else:
                 if idNew in dGroup:
                     vContent = dGroup[idNew].copy()
+                    if dIdsFace[id][4] != 'ND':
+                        vContent[11] = timeFile
+                        vContent[1] = dIdsFace[id][0]
+                        vContent[2] = dIdsFace[id][1]
+                        vContent[3] = dIdsFace[id][2]
+                        vContent[4] = dIdsFace[id][3]
                     if dIdsFace[id][4] == '1':
                         vContent[8] += 1
                     if dIdsFace[id][4] == '0':
                         vContent[9] += 1
                     if dIdsFace[id][4] == 'ND':
                         vContent[10] += 1
+                    vContent[5] += 1
                     vContent[7] = timeFile
                     dGroup[idNew] = vContent
                 else:
-                    dGroup[idNew] = [idNew, dIdsFace[id][0], dIdsFace[id][1], dIdsFace[id][2], dIdsFace[id][3], 0, timeFile, timeFile, 1 if dIdsFace[id][4] == '1' else 0, 1 if dIdsFace[id][4] == '0' else 0, 1 if dIdsFace[id][4] == 'ND' else 0]
+                    dGroup[idNew] = [idNew, None, None, None, None, 1, timeFile, timeFile, 1 if dIdsFace[id][4] == '1' else 0, 1 if dIdsFace[id][4] == '0' else 0, 1 if dIdsFace[id][4] == 'ND' else 0, None]
 
 print(dGroup)
 fileGroupDetection = open(path + "groupDetection.txt", "w")
 for id in dGroup:
-    fileGroupDetection.write(str(dGroup[id][0]) + " " + str(dGroup[id][1]) + " " + str(dGroup[id][2]) + " " + str(dGroup[id][3]) + " " + str(dGroup[id][4]) + " " + str(dGroup[id][5]) + " " + str(dGroup[id][6]) + " " + str(dGroup[id][7])+ " " + str(dGroup[id][8])+ " " + str(dGroup[id][9])+ " " + str(dGroup[id][10]) + " \n")
+    fileGroupDetection.write(str(dGroup[id][0]) + " " + str(dGroup[id][11]) + " " + str(dGroup[id][1]) + " " + str(dGroup[id][2]) + " " + str(dGroup[id][3]) + " " + str(dGroup[id][4]) + " " + str(dGroup[id][6]) + " " + str(dGroup[id][7])+ " " + str(dGroup[id][5]) + " " + str(dGroup[id][8])+ " " + str(dGroup[id][9])+ " " + str(dGroup[id][10]) + " \n")

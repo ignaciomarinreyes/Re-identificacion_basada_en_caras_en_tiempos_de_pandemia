@@ -25,7 +25,10 @@ from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
 
-path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+
+
 flags.DEFINE_string('framework', 'tf', '(tf, tflite, trt')
 flags.DEFINE_string('weights', './checkpoints/yolov4-416',
                     'path to weights file')
@@ -42,6 +45,7 @@ flags.DEFINE_boolean('info', True, 'show detailed info of tracked objects')
 flags.DEFINE_boolean('count', False, 'count objects being tracked on screen')
 
 def main(_argv):
+    print("EMPIEZA")
     # Definition of the parameters
     max_cosine_distance = 0.4
     nn_budget = None
