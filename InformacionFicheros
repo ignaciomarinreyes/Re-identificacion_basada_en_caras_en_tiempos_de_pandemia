@@ -1,0 +1,25 @@
+Bodies
+========
+x y ancho alto id
+
+Faces
+======
+x y ancho alto siOnollevaMascarilla id px1 py1 px2 py2 px3 py3 px4 py4 px5 py5
+
+p son los cinco puntos de la cara
+siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
+
+Tagged
+======
+x y ancho alto siOnollevaMascarilla 
+
+siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
+
+GroupDetection
+===============
+id x y ancho alto nºaparaciones InicioFrame FinFrame nºconMascarilla nºsinMascarilla nºNoDeteccionesCara
+
+x y ancho alto de la cara
+
+
+

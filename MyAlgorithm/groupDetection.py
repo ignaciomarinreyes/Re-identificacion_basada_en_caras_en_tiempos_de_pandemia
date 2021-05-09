@@ -2,52 +2,60 @@ import glob
 
 path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba/"
 #path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+umbral = 10
 
-def readFile(pathTxtFace):
-    vIdBeforeFile = []
-    fileFaceTemp = open(pathTxtFace)
-    for line in fileFaceTemp:
+def getIdsFile(pathTxtFace):
+    dIdsFace = {}
+    fileFace = open(pathTxtFace)
+    for line in fileFace:
         values = line.split(" ")
-        vIdBeforeFile.append(values[5])
-    fileFaceTemp.close()
-    return vIdBeforeFile
+        dIdsFace[values[5]] = values
+    fileFace.close()
+    return dIdsFace
 
-
-vGeneralId = [None] * 500
-i = 0
-pathTxtFaceBefore = ""
+dGroup = {}
+dNorepetition = {}
 for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
     init = pathTxtFace.find("Salida_frame_") + 13
     timeFile = pathTxtFace[init: init + 12]
-    if i == 0:
-        pathTxtFaceBefore = pathTxtFace
-    if i > 0:
-        vIdsBeforeFile = readFile(pathTxtFaceBefore)
-        fileFace = open(pathTxtFace)
-        for line in fileFace:
-            fields = line.split(" ")
-            vContent = []
-            if vGeneralId[int(fields[5])] is not None:
-                vContent = vGeneralId[int(fields[5])].copy()
-                vContent[1] += 1
-                if fields[4] == '1':
-                    vContent[4] += 1
-                if fields[4] == '0':
-                    vContent[5] += 1
-                if fields[4] == 'ND':
-                    vContent[6] += 1
-                if fields[5] not in vIdsBeforeFile:
+    dIdsFace = getIdsFile(pathTxtFace)
+    for id in dIdsFace:
+        if id not in dNorepetition:
+            dNorepetition[id] = 0
+    for id in dNorepetition:
+        if id not in dIdsFace:
+            dNorepetition[id] = dNorepetition[id] + 1
+    for id in dIdsFace:
+        if id in dNorepetition:
+            if dNorepetition[id] > umbral:
+                newId = int(id) + 1000
+                newId = str(newId)
+                if newId in dGroup:
+                    vContent = dGroup[newId].copy()
+                    if dIdsFace[id][4] == '1':
+                        vContent[4] += 1
+                    if dIdsFace[id][4] == '0':
+                        vContent[5] += 1
+                    if dIdsFace[id][4] == 'ND':
+                        vContent[6] += 1
                     vContent[3] = timeFile
+                    dGroup[newId] = vContent
+                else:
+                    dGroup[newId] = [newId, 0, timeFile, None, 0, 0, 0]
             else:
-                vContent = [str(fields[5]),0,timeFile,None,0,0,0]
-            vGeneralId[int(fields[5])] = vContent
-        pathTxtFaceBefore = pathTxtFace
-    i+=1
-
-print(vGeneralId)
+                if id in dGroup:
+                    vContent = dGroup[id].copy()
+                    if dIdsFace[id][4] == '1':
+                        vContent[4] += 1
+                    if dIdsFace[id][4] == '0':
+                        vContent[5] += 1
+                    if dIdsFace[id][4] == 'ND':
+                        vContent[6] += 1
+                    vContent[3] = timeFile
+                    dGroup[id] = vContent
+                else:
+                    dGroup[id] = [id, 0, timeFile, None, 0, 0, 0]
+print(dGroup)
 fileGroupDetection = open(path + "groupDetection.txt", "w")
-for values in vGeneralId:
-    if values is not None:
-        fileGroupDetection.write(str(values[0]) + " " + str(values[1]) + " " + str(values[2]) + " " + str(values[3]) + " " + str(values[4]) + " " + str(values[5]) + " " + str(values[6]) + "\n")
-
-
+for id in dGroup:
+    fileGroupDetection.write(str(dGroup[id][0]) + " " + str(dGroup[id][1]) + " " + str(dGroup[id][2]) + " " + str(dGroup[id][3]) + " " + str(dGroup[id][4]) + " " + str(dGroup[id][5]) + " " + str(dGroup[id][6]) + "\n")
