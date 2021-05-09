@@ -2,7 +2,7 @@ import glob
 
 path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba/"
 #path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
-umbral = 10
+umbral = 2
 
 def getIdsFile(pathTxtFace):
     dIdsFace = {}
@@ -15,36 +15,34 @@ def getIdsFile(pathTxtFace):
 
 dGroup = {}
 dNorepetition = {}
+dIncrement = {}
+idNew = 0
+
 for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
     init = pathTxtFace.find("Salida_frame_") + 13
     timeFile = pathTxtFace[init: init + 12]
     dIdsFace = getIdsFile(pathTxtFace)
     for id in dIdsFace:
-        if id not in dNorepetition:
-            dNorepetition[id] = 0
+        if id not in dIncrement:
+            dIncrement[id] = 0
+        idNew = str(int(id) + dIncrement[id])
+        if idNew not in dNorepetition:
+            dNorepetition[idNew] = 0
     for id in dNorepetition:
         if id not in dIdsFace:
             dNorepetition[id] = dNorepetition[id] + 1
+        else:
+            dNorepetition[id] = 0
     for id in dIdsFace:
-        if id in dNorepetition:
-            if dNorepetition[id] > umbral:
-                newId = int(id) + 1000
-                newId = str(newId)
-                if newId in dGroup:
-                    vContent = dGroup[newId].copy()
-                    if dIdsFace[id][4] == '1':
-                        vContent[8] += 1
-                    if dIdsFace[id][4] == '0':
-                        vContent[9] += 1
-                    if dIdsFace[id][4] == 'ND':
-                        vContent[10] += 1
-                    vContent[7] = timeFile
-                    dGroup[newId] = vContent
-                else:
-                    dGroup[newId] = [newId, dIdsFace[id][0], dIdsFace[id][1], dIdsFace[id][2], dIdsFace[id][3],0, timeFile, timeFile, 1 if dIdsFace[id][4] == '1' else 0, 1 if dIdsFace[id][4] == '0' else 0, 1 if dIdsFace[id][4] == 'ND' else 0]
+        idNew = str(int(id) + dIncrement[id])
+        if idNew not in dIncrement:
+            dIncrement[idNew] = 0
+        if idNew in dNorepetition:
+            if dNorepetition[idNew] > umbral:
+                dIncrement[idNew] = dIncrement[idNew] + 1000
             else:
-                if id in dGroup:
-                    vContent = dGroup[id].copy()
+                if idNew in dGroup:
+                    vContent = dGroup[idNew].copy()
                     if dIdsFace[id][4] == '1':
                         vContent[8] += 1
                     if dIdsFace[id][4] == '0':
@@ -52,9 +50,10 @@ for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
                     if dIdsFace[id][4] == 'ND':
                         vContent[10] += 1
                     vContent[7] = timeFile
-                    dGroup[id] = vContent
+                    dGroup[idNew] = vContent
                 else:
-                    dGroup[id] = [id, dIdsFace[id][0], dIdsFace[id][1], dIdsFace[id][2], dIdsFace[id][3], 0, timeFile, timeFile, 1 if dIdsFace[id][4] == '1' else 0, 1 if dIdsFace[id][4] == '0' else 0, 1 if dIdsFace[id][4] == 'ND' else 0]
+                    dGroup[idNew] = [idNew, dIdsFace[id][0], dIdsFace[id][1], dIdsFace[id][2], dIdsFace[id][3], 0, timeFile, timeFile, 1 if dIdsFace[id][4] == '1' else 0, 1 if dIdsFace[id][4] == '0' else 0, 1 if dIdsFace[id][4] == 'ND' else 0]
+
 print(dGroup)
 fileGroupDetection = open(path + "groupDetection.txt", "w")
 for id in dGroup:
