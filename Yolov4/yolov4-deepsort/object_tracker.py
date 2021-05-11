@@ -25,8 +25,8 @@ from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
 
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
-path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
 
 
 flags.DEFINE_string('framework', 'tf', '(tf, tflite, trt')
@@ -43,6 +43,10 @@ flags.DEFINE_float('score', 0.50, 'score threshold')
 flags.DEFINE_boolean('dont_show', True, 'dont show video output')
 flags.DEFINE_boolean('info', True, 'show detailed info of tracked objects')
 flags.DEFINE_boolean('count', False, 'count objects being tracked on screen')
+
+dNorepetition = {}
+umbral = 2
+dIncrement = {}
 
 def main(_argv):
     print("EMPIEZA")
@@ -100,6 +104,7 @@ def main(_argv):
     frame_num = 0
     # while video is running
     for pathJpg in sorted(glob.glob(path + "*.jpg")):
+        listIdImagen = []
         init = pathJpg.find("Salida_frame_") + 13
         timeJpg = pathJpg[init: init + 12]
         frame = cv2.imread(pathJpg)
@@ -226,10 +231,24 @@ def main(_argv):
             # write file
             widthBox = int(bbox[2]) - int(bbox[0])
             heightBox = int(bbox[3]) - int(bbox[1])
-            fileOutput.write(str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " " + str(track.track_id) + " \n")
+
+            #Hacer unico track.track_id
+            newId =""
+            if str(track.track_id) in dIncrement:
+                print("1_1clave " + str(track.track_id))
+                print("1_2valor " + str(dIncrement[str(track.track_id)]))
+                newId = str(int(dIncrement[str(track.track_id)]) + int(track.track_id))
+            else:
+                newId = str(track.track_id)
+            print("2_newId " + newId)
+            listIdImagen.append(newId)
+            dNorepetition[newId] = 0 # no están en dNorepetion a 0 y los que si están en dNorepetion a 0
+
+            #Escribir fichero
+            fileOutput.write(str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " " + str(newId) + " \n")
         # if enable info flag then print details about each track
             if FLAGS.info:
-                print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(track.track_id), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))
+                print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(newId), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))
         fileOutput.close()
         # calculate frames per second of running detections
         fps = 1.0 / (time.time() - start_time)
@@ -244,6 +263,21 @@ def main(_argv):
         if FLAGS.output:
             out.write(result)
         if cv2.waitKey(1) & 0xFF == ord('q'): break
+        # Cambio imagen
+        for newId in dNorepetition:
+            if newId not in listIdImagen:
+                dNorepetition[newId] = dNorepetition[newId] + 1
+                print("3_newID " + str(newId))
+                print("4_repeticion " + str(dNorepetition[newId]))
+                if dNorepetition[newId] == umbral:
+                    oldId = str(int(newId) % 1000)
+                    if oldId not in dIncrement:
+                        print("7_cabron" + oldId)
+                        dIncrement[oldId] = 0
+                    dIncrement[oldId] = dIncrement[oldId] + 1000
+                    print("5_oldId " + oldId)
+                    print("6_dIncrement[oldId] " + str(dIncrement[oldId]))
+                    #dNorepetition[newId] = 0
 
     cv2.destroyAllWindows()
 
