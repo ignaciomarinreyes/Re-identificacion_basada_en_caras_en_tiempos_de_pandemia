@@ -235,17 +235,14 @@ def main(_argv):
             #Hacer unico track.track_id
             newId =""
             if str(track.track_id) in dIncrement:
-                print("1_1clave " + str(track.track_id))
-                print("1_2valor " + str(dIncrement[str(track.track_id)]))
                 newId = str(int(dIncrement[str(track.track_id)]) + int(track.track_id))
             else:
                 newId = str(track.track_id)
-            print("2_newId " + newId)
             listIdImagen.append(newId)
             dNorepetition[newId] = 0 # no están en dNorepetion a 0 y los que si están en dNorepetion a 0
 
             #Escribir fichero
-            fileOutput.write(str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " " + str(newId) + " \n")
+            fileOutput.write(str(newId) + " " + str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " \n")
         # if enable info flag then print details about each track
             if FLAGS.info:
                 print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(newId), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))
@@ -267,16 +264,11 @@ def main(_argv):
         for newId in dNorepetition:
             if newId not in listIdImagen:
                 dNorepetition[newId] = dNorepetition[newId] + 1
-                print("3_newID " + str(newId))
-                print("4_repeticion " + str(dNorepetition[newId]))
                 if dNorepetition[newId] == umbral:
                     oldId = str(int(newId) % 1000)
                     if oldId not in dIncrement:
-                        print("7_cabron" + oldId)
                         dIncrement[oldId] = 0
                     dIncrement[oldId] = dIncrement[oldId] + 1000
-                    print("5_oldId " + oldId)
-                    print("6_dIncrement[oldId] " + str(dIncrement[oldId]))
                     #dNorepetition[newId] = 0
 
     cv2.destroyAllWindows()

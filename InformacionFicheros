@@ -1,10 +1,10 @@
 Bodies
 ========
-x y ancho alto id
+id x y ancho alto 
 
 Faces
 ======
-x y ancho alto siOnollevaMascarilla id px1 py1 px2 py2 px3 py3 px4 py4 px5 py5
+id x y ancho alto siOnollevaMascarilla px1 py1 px2 py2 px3 py3 px4 py4 px5 py5
 
 p son los cinco puntos de la cara
 siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
@@ -17,7 +17,7 @@ siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
 
 GroupDetection
 ===============
-id tiempoFrameDelÚltimoFaceBoxDetectado x y ancho alto InicioFrame FinFrame  nºaparaciones nºconMascarilla nºsinMascarilla nºNoDeteccionesCara 
+id InicioFrame FinFrame  nºaparaciones nºconMascarilla nºsinMascarilla nºNoDeteccionesCara 
 
 x y ancho alto del último faceBox detectado
 

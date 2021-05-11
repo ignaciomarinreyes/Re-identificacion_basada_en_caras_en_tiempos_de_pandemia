@@ -9,8 +9,8 @@ from retinaface_cov import RetinaFaceCoV
 thresh = 0.8
 mask_thresh = 0.2
 gpuid = 0
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
-path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
 
 detector = RetinaFaceCoV("/content/gdrive/My Drive/TFG/insightface/detection/RetinaFaceAntiCov/model/mnet_cov2", 0, gpuid, 'net3l')
 for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(glob.glob(path + "*.jpg"))):
@@ -24,63 +24,59 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
     for line in fileBody:
         scales = [640, 1080]
         values = line.split(" ")
-        if (len(values) == 6):
-            print("===========================================")
-            print(values[0] + " " + values[1] + " " + values[2] + " " + values[3] + " " + values[4])
-            beginX, endX, beginY, endY = int(values[0]), int(values[0]) + int(values[2]), int(values[1]), int(
-                values[1]) + int(values[3])
-            if beginX < 0:
-                beginX = 0
-            if beginY < 0:
-                beginY = 0
-            heihtCropImage = int(endY) - int(beginY)
-            endYFace = int(beginY) + int((1/3 * heihtCropImage))
-            crop_img = img[beginY:endYFace, beginX:endX]
-            im_shape = crop_img.shape
-            target_size = scales[0]
-            max_size = scales[1]
-            im_size_min = np.min(im_shape[0:2])
-            im_size_max = np.max(im_shape[0:2])
-            im_scale = float(target_size) / float(im_size_min)
-            if np.round(im_scale * im_size_max) > max_size:
-                im_scale = float(max_size) / float(im_size_max)
-            scales = [im_scale]
-            flip = False
-            faces, landmarks = detector.detect(crop_img,
-                                               thresh,
-                                               scales=scales,
-                                               do_flip=flip)
-            if faces is not None:
-                print('find', faces.shape[0], 'faces')
-                if faces.shape[0] == 0:
-                    fileOutput.write("ND ND ND ND ND " + values[4] + " ND ND ND ND ND ND ND ND ND ND \n")
-                else:
-                    for i in range(faces.shape[0]):
-                        landmark5 = landmarks[i].astype(np.int)
-                        face = faces[i]
-                        box = face[0:4].astype(np.int)
-                        mask = face[5]
-                        print(i, box, mask)
+        print("===========================================")
+        print(values[0] + " " + values[1] + " " + values[2] + " " + values[3] + " " + values[4])
+        beginX, endX, beginY, endY = int(values[1]), int(values[1]) + int(values[3]), int(values[2]), int(
+            values[2]) + int(values[4])
+        if beginX < 0:
+            beginX = 0
+        if beginY < 0:
+            beginY = 0
+        heihtCropImage = int(endY) - int(beginY)
+        endYFace = int(beginY) + int((1/3 * heihtCropImage))
+        crop_img = img[beginY:endYFace, beginX:endX]
+        im_shape = crop_img.shape
+        target_size = scales[0]
+        max_size = scales[1]
+        im_size_min = np.min(im_shape[0:2])
+        im_size_max = np.max(im_shape[0:2])
+        im_scale = float(target_size) / float(im_size_min)
+        if np.round(im_scale * im_size_max) > max_size:
+            im_scale = float(max_size) / float(im_size_max)
+        scales = [im_scale]
+        flip = False
+        faces, landmarks = detector.detect(crop_img,
+                                           thresh,
+                                           scales=scales,
+                                           do_flip=flip)
+        if faces is not None:
+            print('find', faces.shape[0], 'faces')
+            if faces.shape[0] == 0:
+                fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND \n")
+            else:
+                for i in range(faces.shape[0]):
+                    landmark5 = landmarks[i].astype(np.int)
+                    face = faces[i]
+                    box = face[0:4].astype(np.int)
+                    mask = face[5]
+                    print(i, box, mask)
+                    colorBox = 0
+                    if mask >= mask_thresh:
+                        color = (0, 0, 255) # Black color in BGR, red
+                        colorBox = 1
+                    else:
+                        color = (0, 255, 0) # green
                         colorBox = 0
-                        if mask >= mask_thresh:
-                            color = (0, 0, 255) # Black color in BGR, red
-                            colorBox = 1
-                        else:
-                            color = (0, 255, 0) # green
-                            colorBox = 0
-                        beginXBox = beginX + box[0]
-                        widthXBox = box[2] - box[0]
-                        beginYBox = beginY + box[1]
-                        heightYBox = box[3] - box[1]
-                        if(heightYBox > 30):
-                            print("Limit box: " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + "--->" + str(colorBox) + " " + str(values[4]))
-                            fileOutput.write(str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + " " + str(colorBox) + " " + str(values[4]) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " "  + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " "  + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " "  + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
-                    print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
+                    beginXBox = beginX + box[0]
+                    widthXBox = box[2] - box[0]
+                    beginYBox = beginY + box[1]
+                    heightYBox = box[3] - box[1]
+                    if(heightYBox > 30):
+                        print("Limit box: " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + "--->" + str(colorBox) + " " + str(values[0]))
+                        fileOutput.write(str(values[0]) + " " + str(beginXBox) + " " + str(beginYBox) + " " + str(widthXBox) + " " + str(heightYBox) + " " + str(colorBox) + " "  + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " "  + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " "  + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " "  + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
+                print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
     fileOutput.close()
     sizefile = os.stat(path + "Salida_frame_" + timeFile + "_faces.txt").st_size
     if(sizefile == 0):
         os.remove(path + "Salida_frame_" + timeFile + "_faces.txt")
     fileBody.close()
-
-
-#+ str(landmarks[0]) + " " + str(landmarks[1]) + " " + str(landmarks[2]) + " " + str(landmarks[3]) + " " + str(landmarks[4]) +
