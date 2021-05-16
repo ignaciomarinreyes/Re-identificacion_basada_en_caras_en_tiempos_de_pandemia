@@ -21,17 +21,17 @@ for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
     for id in dIdsFace:
         if id in dGroup:
             vContent = dGroup[id].copy()
-            if dIdsFace[id][5] == '1':
+            if dIdsFace[id][6] == '1':
                 vContent[4] += 1
-            if dIdsFace[id][5] == '0':
+            if dIdsFace[id][6] == '0':
                 vContent[5] += 1
-            if dIdsFace[id][5] == 'ND':
+            if dIdsFace[id][6] == 'ND':
                 vContent[6] += 1
             vContent[3] += 1
             vContent[2] = timeFile
             dGroup[id] = vContent
         else:
-            dGroup[id] = [id, timeFile, timeFile, 1, 1 if dIdsFace[id][5] == '1' else 0, 1 if dIdsFace[id][5] == '0' else 0, 1 if dIdsFace[id][5] == 'ND' else 0]
+            dGroup[id] = [id, timeFile, timeFile, 1, 1 if dIdsFace[id][6] == '1' else 0, 1 if dIdsFace[id][6] == '0' else 0, 1 if dIdsFace[id][6] == 'ND' else 0]
 
 print(dGroup)
 fileGroupDetection = open(path + "groupDetection.txt", "w")

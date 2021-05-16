@@ -21,12 +21,12 @@ for pathTxtBody, pathTxtFace, pathJpg in zip(sorted(glob.glob(path + "*bodies.tx
     for lineFace in fileFace:
         valuesFace = lineFace.split(" ")
         print("lineFace " + lineFace)
-        if valuesFace[1] != 'ND':
-            beginXf, endXf, beginYf, endYf = int(valuesFace[1]), int(valuesFace[1]) + int(valuesFace[3]), int(valuesFace[2]), int(valuesFace[2]) + int(valuesFace[4])
+        if valuesFace[2] != 'ND':
+            beginXf, endXf, beginYf, endYf = int(valuesFace[2]), int(valuesFace[2]) + int(valuesFace[4]), int(valuesFace[3]), int(valuesFace[3]) + int(valuesFace[5])
             face_img = img[beginYf:endYf, beginXf:endXf]
-            cv2.imwrite("../data/BodiesAndFaces/" + timeFile  + "_" + valuesFace[0] + "_face.png ", face_img)
+            cv2.imwrite("../data/BodiesAndFaces/" + timeFile  + "_" + valuesFace[0] + "_" + valuesFace[1] + "_face.png ", face_img)
         else:
-            fileFaceNull = open("../data/BodiesAndFaces/" + timeFile  + "_" + valuesFace[0] +  "_FaceNoEncontrada", "w")
+            fileFaceNull = open("../data/BodiesAndFaces/" + timeFile  + "_" + valuesFace[0] + "_" + valuesFace[1] + "_FaceNoEncontrada", "w")
             fileFaceNull.close()
     fileBody.close()
     fileFace.close()

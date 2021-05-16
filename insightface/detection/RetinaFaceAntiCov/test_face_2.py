@@ -53,7 +53,7 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
             if faces is not None:
                 print('find', faces.shape[0], 'faces')
                 if faces.shape[0] == 0:
-                    fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND \n")
+                    fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND \n")
                 else:
                     areaBoxFace = []
                     for i in range(faces.shape[0]):
@@ -81,9 +81,9 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                     beginYBoxFace = beginYBody + boxFace[1]
                     heightYBoxFace = boxFace[3] - boxFace[1]
                     print("Limit box: " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + "--->" + str(colorBox) + " " + str(values[0]))
-                    fileOutput.write(str(values[0]) + "_" + str(j) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
+                    fileOutput.write(str(values[0]) + " " + str(j) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
         else:
-            fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND HB \n")
+            fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND HB \n")
             print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
     fileOutput.close()
     sizefile = os.stat(path + "Salida_frame_" + timeFile + "_faces.txt").st_size

@@ -4,7 +4,7 @@ id x y ancho alto
 
 Faces
 ======
-id x y ancho alto siOnollevaMascarilla px1 py1 px2 py2 px3 py3 px4 py4 px5 py5
+id númeroRepeticionCara x y ancho alto siOnollevaMascarilla px1 py1 px2 py2 px3 py3 px4 py4 px5 py5
 
 p son los cinco puntos de la cara
 siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
