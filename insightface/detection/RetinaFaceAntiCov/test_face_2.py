@@ -34,7 +34,7 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
         #    beginY = 0
         heihtImageBody = int(endYBody) - int(beginYBody)
         endYBodyHead = int(beginYBody) + int((1 / 3 * heihtImageBody)) #BeginYBody es la parte superior, el 0 de y está arriba
-        crop_imgBodyHead = img[beginYBody:endYBody, beginXBody:endXBody]
+        crop_imgBodyHead = img[beginYBody:endYBodyHead, beginXBody:endXBody]
         im_shape = crop_imgBodyHead.shape
         target_size = scales[0]
         max_size = scales[1]
@@ -60,7 +60,6 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                         face = faces[i]
                         boxFace = face[0:4].astype(np.int)
                         mask = face[5]
-                        #print(i, box, mask)
                         colorBox = 0
                         if mask >= mask_thresh:
                             color = (0, 0, 255) # Black color in BGR, red
@@ -73,7 +72,7 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                         beginYBoxFace = beginYBody + boxFace[1]
                         heightYBoxFace = boxFace[3] - boxFace[1]
                         print("Limit box: " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + "--->" + str(colorBox) + " " + str(values[0]))
-                        fileOutput.write(str(values[0]) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
+                        fileOutput.write(str(values[0]) + "_" + str(i) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
         else:
             fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND HB \n")
             print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
