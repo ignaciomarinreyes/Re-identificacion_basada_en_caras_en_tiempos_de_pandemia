@@ -1,32 +1,31 @@
 import cv2
 import glob
 
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
-
 path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba/"
 
-for pathTxtBody, pathTxtFace, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(glob.glob(path + "*faces.txt")), sorted(glob.glob(path + "*.jpg"))):
+for pathTxtBody in sorted(glob.glob(path + "*bodies.txt")):
     init = pathTxtBody.find("Salida_frame_") + 13
     timeFile = pathTxtBody[init: init + 12]
-    fileBody = open(pathTxtBody)
-    fileFace = open(pathTxtFace)
-    img = cv2.imread(pathJpg)
-    for lineBodies in fileBody:
-        valuesBodies = lineBodies.split(" ")
-        print("lineBody " + lineBodies)
-        beginX, endX, beginY, endY = int(valuesBodies[1]), int(valuesBodies[1]) + int(valuesBodies[3]), int(valuesBodies[2]), int(valuesBodies[2]) + int(valuesBodies[4])
+    fileFace = open(pathTxtBody)
+    img = cv2.imread(path + "Salida_frame_" + timeFile + ".jpg")
+    for line in fileFace:
+        values = line.split(" ")
+        beginX, endX, beginY, endY = int(values[1]), int(values[1]) + int(values[3]), int(values[2]), int(values[2]) + int(values[4])
         body_img = img[beginY:endY, beginX:endX]
-        cv2.imwrite("../data/BodiesAndFaces/" + timeFile  + "_" + valuesBodies[0] + "_body.png ",body_img)
-    for lineFace in fileFace:
-        valuesFace = lineFace.split(" ")
-        print("lineFace " + lineFace)
-        if valuesFace[2] != 'ND':
-            beginXf, endXf, beginYf, endYf = int(valuesFace[2]), int(valuesFace[2]) + int(valuesFace[4]), int(valuesFace[3]), int(valuesFace[3]) + int(valuesFace[5])
+        cv2.imwrite("../data/BodiesAndFaces/" + timeFile + "_" + values[0] + "_body.jpg", body_img)
+        print("Creada imagen " + timeFile + "_" + values[0] + "_body.jpg")
+    fileFace.close()
+
+for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
+    init = pathTxtFace.find("Salida_frame_") + 13
+    timeFile = pathTxtFace[init: init + 12]
+    fileFace = open(pathTxtFace)
+    img = cv2.imread(path + "Salida_frame_" + timeFile + ".jpg")
+    for line in fileFace:
+        values = line.split(" ")
+        if values[1] != 'ND' and  values[1] != "HB":
+            beginXf, endXf, beginYf, endYf = int(values[2]), int(values[2]) + int(values[4]), int(values[3]), int(values[3]) + int(values[5])
             face_img = img[beginYf:endYf, beginXf:endXf]
-            cv2.imwrite("../data/BodiesAndFaces/" + timeFile  + "_" + valuesFace[0] + "_" + valuesFace[1] + "_face.png ", face_img)
-        else:
-            fileFaceNull = open("../data/BodiesAndFaces/" + timeFile  + "_" + valuesFace[0] + "_" + valuesFace[1] + "_FaceNoEncontrada", "w")
-            fileFaceNull.close()
-    fileBody.close()
+            cv2.imwrite("../data/BodiesAndFaces/" + timeFile  + "_" + values[0] + "_" + values[1] + "_face.jpg",face_img)
+            print("Creada imagen " + timeFile  + "_" + values[0] + "_" + values[1] + "_face.jpg ")
     fileFace.close()

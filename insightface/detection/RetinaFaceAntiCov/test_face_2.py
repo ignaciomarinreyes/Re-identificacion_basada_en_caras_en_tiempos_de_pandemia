@@ -45,6 +45,7 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
             im_scale = float(max_size) / float(im_size_max)
         scales = [im_scale]
         flip = False
+        #if (heihtImageBody > 30 and endYBody > 700):
         if (heihtImageBody > 30):
             faces, landmarks = detector.detect(crop_imgBodyHead,
                                                thresh,
@@ -83,7 +84,7 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                     print("Limit box: " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + "--->" + str(colorBox) + " " + str(values[0]))
                     fileOutput.write(str(values[0]) + " " + str(j) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
         else:
-            fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND HB \n")
+            fileOutput.write(values[0] + " HB HB HB HB HB HB HB HB HB HB HB HB HB HB HB HB \n")
             print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
     fileOutput.close()
     sizefile = os.stat(path + "Salida_frame_" + timeFile + "_faces.txt").st_size
