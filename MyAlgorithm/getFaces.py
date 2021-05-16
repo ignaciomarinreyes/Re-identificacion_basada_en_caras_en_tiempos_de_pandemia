@@ -14,9 +14,8 @@ for pathTxtFace, pathJpg in zip(sorted(glob.glob(path + "*faces.txt")), sorted(g
     for line in fileFace:
         values = line.split(" ")
         if values[1] != 'ND':
-            beginX, endX, beginY, endY = int(values[1]), int(values[1]) + int(values[3]), int(values[2]), int(values[2]) + int(values[4])
-            print(values[1] + " "  + values[2] + " " + values[3] + " " + values[4])
-            face_img = img[beginY:endY, beginX:endX]
-            cv2.imwrite("../data/Faces/" + values[0] + "_" + timeFile  + ".png ",face_img)
-            print("Creada imagen " +  values[0] + "_" + timeFile  + ".png ")
+            beginXf, endXf, beginYf, endYf = int(values[2]), int(values[2]) + int(values[4]), int(values[3]), int(values[3]) + int(values[5])
+            face_img = img[beginYf:endYf, beginXf:endXf]
+            cv2.imwrite("../data/Faces/" + timeFile  + "_" + values[0] + "_" + values[1] + "_face.png ",face_img)
+            print("Creada imagen " + timeFile  + "_" + values[0] + "_" + values[1] + "_face.png ")
     fileFace.close()

@@ -14,8 +14,7 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
     for line in fileFace:
         values = line.split(" ")
         beginX, endX, beginY, endY = int(values[1]), int(values[1]) + int(values[3]), int(values[2]), int(values[2]) + int(values[4])
-        print(values[1] + " " + int(values[1]) + int(values[3]) + " " + int(values[2]) + " " + int(values[2]) + int(values[4]))
         body_img = img[beginY:endY, beginX:endX]
-        cv2.imwrite("../data/Bodies/" + values[0] + "_" + timeFile  + ".png ",body_img)
-        print("Creada imagen " +  values[0] + "_" + timeFile  + ".png ")
+        cv2.imwrite("../data/Bodies/" + timeFile  + "_" + values[0] + "_body.png ",body_img)
+        print("Creada imagen "  + timeFile  + "_" + values[0] + "_body.png ")
     fileFace.close()
