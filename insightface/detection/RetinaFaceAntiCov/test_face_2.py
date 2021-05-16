@@ -55,24 +55,33 @@ for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(
                 if faces.shape[0] == 0:
                     fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND ND \n")
                 else:
+                    areaBoxFace = []
                     for i in range(faces.shape[0]):
-                        landmark5 = landmarks[i].astype(np.int)
                         face = faces[i]
                         boxFace = face[0:4].astype(np.int)
-                        mask = face[5]
-                        colorBox = 0
-                        if mask >= mask_thresh:
-                            color = (0, 0, 255) # Black color in BGR, red
-                            colorBox = 1
-                        else:
-                            color = (0, 255, 0) # green
-                            colorBox = 0
-                        beginXBoxFace = beginXBody + boxFace[0]
                         widthXBoxFace = boxFace[2] - boxFace[0]
-                        beginYBoxFace = beginYBody + boxFace[1]
                         heightYBoxFace = boxFace[3] - boxFace[1]
-                        print("Limit box: " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + "--->" + str(colorBox) + " " + str(values[0]))
-                        fileOutput.write(str(values[0]) + "_" + str(i) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
+                        areaBoxFaceValue = widthXBoxFace * heightYBoxFace
+                        areaBoxFace.append(areaBoxFaceValue)
+                    maxValue = max(areaBoxFace)
+                    j = areaBoxFace.index(maxValue)
+                    landmark5 = landmarks[j].astype(np.int)
+                    faceMax = faces[j]
+                    boxFace = faceMax[0:4].astype(np.int)
+                    mask = faceMax[5]
+                    colorBox = 0
+                    if mask >= mask_thresh:
+                        color = (0, 0, 255) # Black color in BGR, red
+                        colorBox = 1
+                    else:
+                        color = (0, 255, 0) # green
+                        colorBox = 0
+                    beginXBoxFace = beginXBody + boxFace[0]
+                    widthXBoxFace = boxFace[2] - boxFace[0]
+                    beginYBoxFace = beginYBody + boxFace[1]
+                    heightYBoxFace = boxFace[3] - boxFace[1]
+                    print("Limit box: " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + "--->" + str(colorBox) + " " + str(values[0]))
+                    fileOutput.write(str(values[0]) + "_" + str(j) + " " + str(beginXBoxFace) + " " + str(beginYBoxFace) + " " + str(widthXBoxFace) + " " + str(heightYBoxFace) + " " + str(colorBox) + " " + str(landmark5[0][0]) + " " + str(landmark5[0][1]) + " " + str(landmark5[1][0]) + " " + str(landmark5[1][1]) + " " + str(landmark5[2][0]) + " " + str(landmark5[2][1]) + " " + str(landmark5[3][0]) + " " + str(landmark5[3][1]) + " " + str(landmark5[4][0]) + " " + str(landmark5[4][1]) + " \n")
         else:
             fileOutput.write(values[0] + " ND ND ND ND ND ND ND ND ND ND ND ND ND ND HB \n")
             print("Box ready: "  + path + "Salida_frame_" + timeFile + "_faces.txt")
