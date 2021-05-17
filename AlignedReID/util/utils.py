@@ -197,7 +197,9 @@ def show_alignedreid(local_img_path, img_path, dist):
     d,D,sp = dtw(dist)
     origin_dist = np.mean(np.diag(dist))
     drow_path(img, sp)
-    plt.subplot(1,2,1).set_title('Aligned distance: %.4f \n Original distance: %.4f' %(d,origin_dist))
+    print("Aligned distance:" + str(d))
+    print("Original distance:" + str(origin_dist))
+    '''plt.subplot(1,2,1).set_title('Aligned distance: %.4f \n Original distance: %.4f' %(d,origin_dist))
     plt.subplot(1,2,1).set_xlabel('Aligned Result')
     plt.imshow(img)
     plt.subplot(1,2,2).set_title('Distance Map')
@@ -207,7 +209,7 @@ def show_alignedreid(local_img_path, img_path, dist):
     plt.subplots_adjust(bottom=0.1, left=0.075, right=0.85, top=0.9)
     cax = plt.axes([0.9, 0.25, 0.025, 0.5])
     plt.colorbar(cax = cax)
-    plt.show()
+    plt.show()'''
 
 def merge_feature(feature_list, shp, sample_rate = None):
     def pre_process(torch_feature_map):
