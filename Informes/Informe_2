@@ -1,0 +1,262 @@
+DeepFace
+========
+
+10_18_52_600_1_body.jpg con 10_18_52_600_1_body.jpg===> 0.0
+10_18_52_600_1_body.jpg con 10_18_52_600_2_body.jpg===> 0.15274794561339877
+10_18_52_600_1_body.jpg con 10_18_52_600_3_body.jpg===> 0.4462338410358969
+10_18_52_600_1_body.jpg con 10_18_52_600_4_body.jpg===> 0.5343745477786599
+10_18_52_600_1_body.jpg con 10_18_52_800_1_body.jpg===> 0.2763246305279198
+10_18_52_600_1_body.jpg con 10_18_52_800_2_body.jpg===> 0.1846168265870306
+10_18_52_600_1_body.jpg con 10_18_52_800_3_body.jpg===> 0.10376415923390236
+10_18_52_600_1_body.jpg con 10_18_52_800_4_body.jpg===> 0.5309800953013399
+10_18_52_600_1_body.jpg con 10_18_53_000_1_body.jpg===> 0.08870502853023343
+10_18_52_600_1_body.jpg con 10_18_53_000_2_body.jpg===> 0.22240910891688115
+10_18_52_600_1_body.jpg con 10_18_53_000_3_body.jpg===> 0.13744004932526543
+10_18_52_600_1_body.jpg con 10_18_53_000_7_body.jpg===> 0.28416903037815555
+10_18_52_600_1_body.jpg con 10_18_53_000_8_body.jpg===> 0.3969789753286814
+10_18_52_600_1_body.jpg con 10_18_53_000_9_body.jpg===> 0.11037569932133262
+10_18_52_600_1_body.jpg con 10_18_53_200_10_body.jpg===> 0.32938371358148955
+10_18_52_600_1_body.jpg con 10_18_53_200_1_body.jpg===> 0.08287742878207849
+10_18_52_600_1_body.jpg con 10_18_53_200_3_body.jpg===> 0.43283671868258233
+10_18_52_600_1_body.jpg con 10_18_53_200_4_body.jpg===> 0.4959941538689713
+10_18_52_600_1_body.jpg con 10_18_53_200_7_body.jpg===> 0.4107205051284988
+10_18_52_600_1_body.jpg con 10_18_53_200_8_body.jpg===> 0.303687121718461
+10_18_52_600_1_body.jpg con 10_18_53_200_9_body.jpg===> 0.4811825187682194
+10_18_52_600_1_body.jpg con 10_18_53_400_10_body.jpg===> 0.22118126643923575
+10_18_52_600_1_body.jpg con 10_18_53_400_1_body.jpg===> 0.3891891417914878
+10_18_52_600_1_body.jpg con 10_18_53_400_2_body.jpg===> 0.10985086936094468
+10_18_52_600_1_body.jpg con 10_18_53_400_3_body.jpg===> 0.4716590391076553
+10_18_52_600_1_body.jpg con 10_18_53_400_4_body.jpg===> 0.5371430014931293
+10_18_52_600_1_body.jpg con 10_18_53_400_7_body.jpg===> 0.38223675769430465
+10_18_52_600_1_body.jpg con 10_18_53_400_9_body.jpg===> 0.46776125834735793
+10_18_52_600_1_body.jpg con 10_18_53_600_1_body.jpg===> 0.4709376302103183
+
+AlignedReID
+===========
+
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg
+Aligned distance:0.19766911678016186
+Original distance:0.0
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_2_body.jpg
+Aligned distance:0.8153817392885685
+Original distance:0.8713015839457512
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_3_body.jpg
+Aligned distance:0.7653115428984165
+Original distance:0.8017571344971657
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_4_body.jpg
+Aligned distance:0.9548535123467445
+Original distance:1.0265257507562637
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_800_1_body.jpg
+Aligned distance:0.4708799012005329
+Original distance:0.4519938491284847
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_800_2_body.jpg
+Aligned distance:0.8122510947287083
+Original distance:0.861010879278183
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_800_3_body.jpg
+Aligned distance:0.828196506947279
+Original distance:0.8807395696640015
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_52_800_4_body.jpg
+Aligned distance:0.9477216862142086
+Original distance:1.0414617732167244
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_000_1_body.jpg
+Aligned distance:0.5127988792955875
+Original distance:0.5126079544425011
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_000_2_body.jpg
+Aligned distance:0.6084471605718136
+Original distance:0.6898321732878685
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_000_3_body.jpg
+Aligned distance:0.7896844446659088
+Original distance:0.8456092774868011
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_000_7_body.jpg
+Aligned distance:0.785035602748394
+Original distance:0.8487934619188309
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_000_8_body.jpg
+Aligned distance:0.8208669386804104
+Original distance:0.8817179128527641
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_000_9_body.jpg
+Aligned distance:0.7503204084932804
+Original distance:0.7948234975337982
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_10_body.jpg
+Aligned distance:0.823561429977417
+Original distance:0.907822921872139
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_1_body.jpg
+Aligned distance:0.4704624842852354
+Original distance:0.45067207887768745
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_3_body.jpg
+Aligned distance:0.79695263504982
+Original distance:0.8544502854347229
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_4_body.jpg
+Aligned distance:0.9596157819032669
+Original distance:1.0304523780941963
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_7_body.jpg
+Aligned distance:0.79039067029953
+Original distance:0.8451889157295227
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_8_body.jpg
+Aligned distance:0.7715691812336445
+Original distance:0.8604806140065193
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_200_9_body.jpg
+Aligned distance:0.7723403535783291
+Original distance:0.8150193616747856
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_10_body.jpg
+Aligned distance:0.8009855598211288
+Original distance:0.8771840333938599
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_1_body.jpg
+Aligned distance:0.5062908977270126
+Original distance:0.5119681544601917
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_2_body.jpg
+Aligned distance:0.82224977388978
+Original distance:0.8780008107423782
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_3_body.jpg
+Aligned distance:0.7854567766189575
+Original distance:0.826964259147644
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_4_body.jpg
+Aligned distance:0.969370998442173
+Original distance:1.0366631150245667
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_7_body.jpg
+Aligned distance:0.7792970426380634
+Original distance:0.9211640655994415
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_400_9_body.jpg
+Aligned distance:0.7737594656646252
+Original distance:0.8327612057328224
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_600_1_body.jpg
+Aligned distance:0.49694355949759483
+Original distance:0.4889434836804867
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_600_2_body.jpg
+Aligned distance:0.8247613161802292
+Original distance:0.8816771060228348
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_600_3_body.jpg
+Aligned distance:0.7416078969836235
+Original distance:0.7726441621780396
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_600_4_body.jpg
+Aligned distance:0.9739348217844963
+Original distance:1.034519948065281
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_600_7_body.jpg
+Aligned distance:0.7134208902716637
+Original distance:0.7592258080840111
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_600_9_body.jpg
+Aligned distance:0.7329796776175499
+Original distance:0.7800311595201492
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_10_body.jpg
+Aligned distance:0.814228642731905
+Original distance:0.8788743987679482
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_1_body.jpg
+Aligned distance:0.6113438289612532
+Original distance:0.6332803629338741
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_2_body.jpg
+Aligned distance:0.8005777634680271
+Original distance:0.8454112038016319
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_3_body.jpg
+Aligned distance:0.7944692336022854
+Original distance:0.841505691409111
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_4_body.jpg
+Aligned distance:0.8774948455393314
+Original distance:1.0157958641648293
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_7_body.jpg
+Aligned distance:0.7478158660233021
+Original distance:0.804137758910656
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_53_800_9_body.jpg
+Aligned distance:0.772971123456955
+Original distance:0.8221097961068153
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_1008_body.jpg
+Aligned distance:0.8423455320298672
+Original distance:0.8969594240188599
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_10_body.jpg
+Aligned distance:0.8305819295346737
+Original distance:0.8941896334290504
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_1_body.jpg
+Aligned distance:0.8050141930580139
+Original distance:0.8635165616869926
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_2_body.jpg
+Aligned distance:0.8162286803126335
+Original distance:0.8824047595262527
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_3_body.jpg
+Aligned distance:0.8845889456570148
+Original distance:0.9568018838763237
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_4_body.jpg
+Aligned distance:0.9732269495725632
+Original distance:1.0430940091609955
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_000_9_body.jpg
+Aligned distance:0.7590825855731964
+Original distance:0.8209832459688187
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_200_1008_body.jpg
+Aligned distance:0.7142490930855274
+Original distance:0.7696741372346878
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_200_15_body.jpg
+Aligned distance:0.8762581944465637
+Original distance:0.9441731944680214
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_200_2_body.jpg
+Aligned distance:0.8060394003987312
+Original distance:0.8559615388512611
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_200_3_body.jpg
+Aligned distance:0.6689586006104946
+Original distance:0.7150222435593605
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_200_4_body.jpg
+Aligned distance:0.9592420049011707
+Original distance:1.02664415538311
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_200_9_body.jpg
+Aligned distance:0.7532885707914829
+Original distance:0.8066636025905609
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_400_15_body.jpg
+Aligned distance:0.9230802766978741
+Original distance:0.9896474778652191
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_400_2_body.jpg
+Aligned distance:0.7706532031297684
+Original distance:0.8207244053483009
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_400_4_body.jpg
+Aligned distance:0.976031981408596
+Original distance:1.0411332920193672
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_400_9_body.jpg
+Aligned distance:0.7406768538057804
+Original distance:0.7827861309051514
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_600_1008_body.jpg
+Aligned distance:0.8472142294049263
+Original distance:0.9070257619023323
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_600_17_body.jpg
+Aligned distance:0.8010158129036427
+Original distance:0.8453329876065254
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_600_2_body.jpg
+Aligned distance:0.7711169086396694
+Original distance:0.8361010402441025
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_600_4_body.jpg
+Aligned distance:1.0156701914966106
+Original distance:1.0891731604933739
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_600_9_body.jpg
+Aligned distance:0.733245249837637
+Original distance:0.7916144356131554
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_800_1007_body.jpg
+Aligned distance:0.7526414580643177
+Original distance:0.8067264705896378
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_800_1008_body.jpg
+Aligned distance:0.8355391807854176
+Original distance:0.8909503296017647
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_800_1010_body.jpg
+Aligned distance:0.8547034449875355
+Original distance:0.9155715554952621
+/content/gdrive/My Drive/TFG/data/Bodies/10_18_52_600_1_body.jpg con /content/gdrive/My Drive/TFG/data/Bodies/10_18_54_800_17_body.jpg
+Aligned distance:0.7946217693388462
+Original distance:0.8422691971063614
+
+AlignIdRank1
+============
+
+positionMinValue 3
+[0.8153817392885685, 0.7653115428984165, 0.9548535123467445, 0.4708799012005329, 0.8122510947287083, 0.828196506947279, 0.9477216862142086]
+positionMinValue 4
+[0.8153817392885685, 0.5948369950056076, 0.8793064542114735, 0.7540520690381527, 0.42238473892211914, 0.550739323720336, 0.8591833785176277]
+positionMinValue 5
+[0.7653115428984165, 0.5948369950056076, 0.8921837918460369, 0.6855360958725214, 0.6102955527603626, 0.49692640267312527, 0.8693069629371166]
+positionMinValue 6
+[0.9548535123467445, 0.8793064542114735, 0.8921837918460369, 0.9105155505239964, 0.8847001306712627, 0.8828319199383259, 0.4364733276888728]
+positionMinValue 0
+numeradorRank1 1
+[0.4708799012005329, 0.7540520690381527, 0.6855360958725214, 0.9105155505239964, 0.7495219670236111, 0.7481913715600967, 0.9064509309828281]
+positionMinValue 1
+numeradorRank1 2
+[0.8122510947287083, 0.42238473892211914, 0.6102955527603626, 0.8847001306712627, 0.7495219670236111, 0.5567980334162712, 0.8696070276200771]
+positionMinValue 2
+numeradorRank1 3
+[0.828196506947279, 0.550739323720336, 0.49692640267312527, 0.8828319199383259, 0.7481913715600967, 0.5567980334162712, 0.8461518213152885]
+positionMinValue 3
+numeradorRank1 4
+[0.9477216862142086, 0.8591833785176277, 0.8693069629371166, 0.4364733276888728, 0.9064509309828281, 0.8696070276200771, 0.8461518213152885]
+0.5
