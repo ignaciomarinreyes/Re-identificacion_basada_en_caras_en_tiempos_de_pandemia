@@ -48,7 +48,7 @@ if __name__ == '__main__':
         img1 = img_to_tensor(img1, img_transform)
         id1 = pathJpg1.split("_")[4]
         for pathJpg2 in sorted(glob.glob(path + "*.jpg")):
-            if pathJpg1 != pathJpg2:
+            if pathJpg1 != pathJpg2 :
                 img2 = read_image(pathJpg2)
                 img2 = img_to_tensor(img2, img_transform)
                 if use_gpu:

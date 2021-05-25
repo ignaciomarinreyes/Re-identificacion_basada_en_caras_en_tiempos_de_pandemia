@@ -25,8 +25,9 @@ from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
 
-path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
+#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
 #path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+path="/content/gdrive/My Drive/TFG/data/LPATrail19Prueba/"
 
 
 flags.DEFINE_string('framework', 'tf', '(tf, tflite, trt')

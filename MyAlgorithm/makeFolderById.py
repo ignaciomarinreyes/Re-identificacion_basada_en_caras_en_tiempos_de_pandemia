@@ -2,9 +2,10 @@ import glob
 import shutil
 import os
 
-pathOrigin = "/Users/ignacio/TFG/TFG/data/LPATrail19Prueba/"
-pathDestiny = "/Users/ignacio/TFG/TFG/data/Reidentification/"
-place = "Vegueta"
+pathOrigin = "/Users/ignacio/dataTFG/Bodies/"
+#pathDestiny = "/Users/ignacio/TFG/TFG/data/Reidentification/"
+pathDestiny = "/Users/ignacio/dataTFG/Reidentification/"
+place = "Tafira"
 
 if not os.path.exists(pathDestiny + place):
     os.makedirs(pathDestiny + place)

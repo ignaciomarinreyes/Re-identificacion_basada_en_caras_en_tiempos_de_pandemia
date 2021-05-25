@@ -146,4 +146,4 @@ if __name__ == '__main__':
     main()
 
 # source /Users/ignacio/PycharmProjects/untitled/venv/bin/activate
-# python /Users/ignacio/TFG/TFG/MyAlgorithm/readFrames.py -input /Users/ignacio/Downloads/C0001.mp4 -folder /Users/ignacio/TFG/TFG/data/LPATrail19/ -prefix Salida_frame_ -framespersec 5
+# python /Users/ignacio/TFG/TFG/MyAlgorithm/readFrames.py -input /Users/ignacio/Downloads/C0001.mp4 -folder /Users/ignacio/TFG/TFG/data/LPATrail19/ -prefix Salida_ -framespersec 5
