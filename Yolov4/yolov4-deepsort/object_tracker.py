@@ -24,11 +24,7 @@ from deep_sort import preprocessing, nn_matching
 from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
-
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
-#path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
-path="/content/gdrive/My Drive/TFG/data/LPATrail19Prueba/"
-
+import sys
 
 flags.DEFINE_string('framework', 'tf', '(tf, tflite, trt')
 flags.DEFINE_string('weights', './checkpoints/yolov4-416',
@@ -36,7 +32,7 @@ flags.DEFINE_string('weights', './checkpoints/yolov4-416',
 flags.DEFINE_integer('size', 416, 'resize images to')
 flags.DEFINE_boolean('tiny', False, 'yolo or yolo-t0iny')
 flags.DEFINE_string('model', 'yolov4', 'yolov3 or yolov4')
-flags.DEFINE_string('video', './data/video/test.mp4', 'path to input video or set to 0 for webcam')
+flags.DEFINE_string('video', './data/video/test.mp4', 'dir path to apply the algorithm')
 flags.DEFINE_string('output', None, 'path to output video')
 flags.DEFINE_string('output_format', 'XVID', 'codec used in VideoWriter when saving video to file')
 flags.DEFINE_float('iou', 0.45, 'iou threshold')
@@ -45,6 +41,7 @@ flags.DEFINE_boolean('dont_show', True, 'dont show video output')
 flags.DEFINE_boolean('info', True, 'show detailed info of tracked objects')
 flags.DEFINE_boolean('count', False, 'count objects being tracked on screen')
 
+path = sys.argv[1]
 dNorepetition = {}
 umbral = 2
 dIncrement = {}
@@ -241,9 +238,11 @@ def main(_argv):
                 newId = str(track.track_id)
             listIdImagen.append(newId)
             dNorepetition[newId] = 0 # no están en dNorepetion a 0 y los que si están en dNorepetion a 0
-
             #Escribir fichero
-            fileOutput.write(str(newId) + " " + str(int(bbox[0])) + " " + str(int(bbox[1])) + " " +  str(widthBox) + " " + str(heightBox) + " \n")
+            fileOutput.write(str(newId) + " " +
+                             ("1" if int(bbox[0]) < 0 else str(int(bbox[0]))) + " " +
+                             ("1" if int(bbox[1]) < 0 else str(int(bbox[1]))) + " " +
+                             str(widthBox) + " " + str(heightBox) + " \n")
         # if enable info flag then print details about each track
             if FLAGS.info:
                 print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(newId), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))

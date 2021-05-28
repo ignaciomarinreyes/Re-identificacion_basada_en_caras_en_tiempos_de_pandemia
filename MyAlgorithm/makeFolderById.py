@@ -2,9 +2,8 @@ import glob
 import shutil
 import os
 
-pathOrigin = "/Users/ignacio/dataTFG/Bodies/"
-#pathDestiny = "/Users/ignacio/TFG/TFG/data/Reidentification/"
-pathDestiny = "/Users/ignacio/dataTFG/Reidentification/"
+pathOrigin = "/Users/ignacio/TFG/TFG/data/Bodies/"
+pathDestiny = "/Users/ignacio/TFG/TFG/data/Reidentification/"
 place = "Tafira"
 
 if not os.path.exists(pathDestiny + place):
