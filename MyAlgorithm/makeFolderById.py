@@ -9,7 +9,7 @@ place = "Tafira"
 if not os.path.exists(pathDestiny + place):
     os.makedirs(pathDestiny + place)
 
-for pathJpg1 in sorted(glob.glob(pathOrigin + "*.jpg")):
+for pathJpg1 in sorted(glob.glob(pathOrigin + "*.png")):
     pathWithOutBaseName, baseName = os.path.split(pathJpg1)
     id = baseName.split("_")[4]
     if not os.path.exists(pathDestiny + place + "/" + id):
