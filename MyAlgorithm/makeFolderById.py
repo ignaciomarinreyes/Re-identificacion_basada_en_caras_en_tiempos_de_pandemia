@@ -9,9 +9,9 @@ place = "Tafira"
 if not os.path.exists(pathDestiny + place):
     os.makedirs(pathDestiny + place)
 
-for pathJpg1 in sorted(glob.glob(pathOrigin + "*.png")):
-    pathWithOutBaseName, baseName = os.path.split(pathJpg1)
+for pathPng1 in sorted(glob.glob(pathOrigin + "*.png")):
+    pathWithOutBaseName, baseName = os.path.split(pathPng1)
     id = baseName.split("_")[4]
     if not os.path.exists(pathDestiny + place + "/" + id):
         os.makedirs(pathDestiny + place + "/" + id)
-    shutil.copy(pathJpg1,pathDestiny + place + "/" + id + "/" + baseName)
+    shutil.copy(pathPng1,pathDestiny + place + "/" + id + "/" + baseName)

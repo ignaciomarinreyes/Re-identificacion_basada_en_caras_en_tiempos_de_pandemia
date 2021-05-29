@@ -89,8 +89,8 @@ def extract_frames(videofile, frames_folder, start_time, num_frames, frames_per_
             return False
 
         if i % inc_frames == 0:
-            # frame_name = '{}_frame_{}:{:03d}.jpg'.format(frame_prefix,
-            frame_name = '{}frame_{}_{:03d}.jpg'.format(frame_prefix,
+            # frame_name = '{}_frame_{}:{:03d}.png'.format(frame_prefix,
+            frame_name = '{}frame_{}_{:03d}.png'.format(frame_prefix,
                                                          # frame_time.strftime('%H:%M:%S'),
                                                          frame_time.strftime('%H_%M_%S'),
                                                          int(frame_time.microsecond / 1000))

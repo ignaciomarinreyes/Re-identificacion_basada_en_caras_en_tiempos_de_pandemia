@@ -15,6 +15,7 @@ def parse_arguments():
     parser.add_argument('-path', '-p' ,default="/content/gdrive/My Drive/TFG/data/Reidentification", help='Path to apply AlignedReId')
     parser.add_argument('-vector', '-v', action='store_true')
     parser.add_argument('-rank1', '-r1', action='store_true')
+    parser.add_argument('-dist', '-d', action='store_true')
     parser.add_argument('-euclidean', '-e', action='store_true')
     args = parser.parse_args()
     return args
@@ -39,11 +40,7 @@ def getVectorAlignedReId(pathPng, use_gpu, myexactor, model, img_transform):
         img = img.cuda()
     model.eval()
     f1 = myexactor(img)
-    a1 = normalize(pool2d(f1[0], type='max'))
-    temp_feat1 = []
-    for i in range(8):
-        temp_feat1 = a1[i]
-    return temp_feat1
+    return f1[0] # Usar poold2d ??
 
 
 def alignedReIdVector():
@@ -65,20 +62,19 @@ def alignedReIdVector():
             pathWithOutBaseName, id = os.path.split(dirpath)
             timeFile = file[0: 12]
             print(dirpath + "/" + timeFile + "_" + id + "_body.png")
-            a1 = getVectorAlignedReId(dirpath + "/" + timeFile + "_" + id + "_body.png", use_gpu, myexactor, model, img_transform)
+            f1 = getVectorAlignedReId(dirpath + "/" + timeFile + "_" + id + "_body.png", use_gpu, myexactor, model, img_transform)
             fileOutput = open(dirpath + "/" + timeFile + "_" + id + "_" + "AlignedReId.txt", "w")
-            for value in a1:
+            for value in f1:
                 fileOutput.write(str(value) + "\n")
 
-def calculate_alignedReId(dist):
+def calculateAlignedDistAndOriginalDist(dist):
     d, D, sp = dtw(dist)
     origin_dist = np.mean(np.diag(dist))
-    drow_path(img, sp)
     print("Aligned distance:" + str(d))
     print("Original distance:" + str(origin_dist))
 
 
-def alignedReIdVectorRank1():
+def alignedReIdVectorDist():
     for dirpath1, dirnames1, filenames1 in os.walk(params.path):
         filenames1 = [f for f in filenames1 if not f[0] == '.']
         for file1 in sorted(filenames1):
@@ -99,21 +95,19 @@ def alignedReIdVectorRank1():
                         vAlignedReId2 = []
                         for line2 in fileAlignedReId2:
                             vAlignedReId2.append(line2)
-                        dist = np.zeros((8, 8))
-                        for i in range(8):
-                            temp_feat1 = vAlignedReId1[i]
-                            for j in range(8):
-                                temp_feat2 = vAlignedReId1[j]
-                                if params.euclidean:
-                                    dist[i][j] = euclidean(temp_feat1, temp_feat2)
-                        calculate_alignedReId(dist)
+                        if params.euclidean:
+                            dist = compute_dist(vAlignedReId1, vAlignedReId2, type='euclidean')
+                        if params.dist:
+                            calculateAlignedDistAndOriginalDist(dist)
+                        if params.rank1:
+                            print("CONSTRUCCION")
 
 
 if __name__ == '__main__':
     params = parse_arguments()
     if params.vector:
         alignedReIdVector()
-    if params.rank1:
-        alignedReIdVectorRank1()
+    if params.dist or params.rank1:
+        alignedReIdVectorDist()
 
 

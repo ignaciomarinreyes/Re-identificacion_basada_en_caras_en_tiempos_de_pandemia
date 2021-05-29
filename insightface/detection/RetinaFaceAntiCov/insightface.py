@@ -13,13 +13,13 @@ path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_prueba/"
 #path="/content/gdrive/My Drive/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
 
 detector = RetinaFaceCoV("/content/gdrive/My Drive/TFG/insightface/detection/RetinaFaceAntiCov/model/mnet_cov2", 0, gpuid, 'net3l')
-for pathTxtBody, pathJpg in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(glob.glob(path + "*.jpg"))):
+for pathTxtBody, pathPng in zip(sorted(glob.glob(path + "*bodies.txt")), sorted(glob.glob(path + "*.png"))):
     print("###################################")
     print("Leyendo:" + pathTxtBody)
     init = pathTxtBody.find("Salida_frame_") + 13
     timeFile = pathTxtBody[init: init + 12]
     fileBody = open(pathTxtBody)
-    img = cv2.imread(pathJpg)
+    img = cv2.imread(pathPng)
     fileOutput = open(path + "Salida_frame_" + timeFile + "_faces.txt", "w")
     for line in fileBody:
         scales = [640, 1080]
