@@ -39,11 +39,11 @@ def rank1AlignedReId():
                 distOriginList.append(line.split(" ")[7])
             positionMinValueAlignRank1List = distAlignList.index(min(distAlignList))
             positionMinValueOriginRank1List = distOriginList.index(min(distOriginList))
-            #print(file1)
-            #print("positionMinValue " + str(positionMinValueAlignRank1List))
+            print(file1)
+            print("positionMinValue " + str(positionMinValueAlignRank1List))
             if(id1 == id2List[positionMinValueAlignRank1List]):
                 numeradorAlignRank1+=1
-                #print("numeradorRank1 " + str(numeradorAlignRank1))
+                print("numeradorRank1 " + str(numeradorAlignRank1))
             if(id1 == id2List[positionMinValueOriginRank1List]):
                 numeradorOriginRank1+=1
             denominadorRank1+=1

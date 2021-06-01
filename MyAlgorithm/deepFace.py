@@ -39,7 +39,7 @@ def rank1DeepFace():
         numeradorRank1Euclidean = 0
         numeradorRank1Euclidean_l2 = 0
         denominadorRank1 = 0
-        #print("============= " + model + " ===================")
+        print("============= " + model + " ===================")
         for dirpath1, dirnames1, filenames1 in os.walk(params.path):
             filenames1 = [f for f in filenames1 if not f[0] == '.' and f[-25:] == 'deepFaceInterDistance.txt' and f.split("_")[5] == model]
             for file1 in sorted(filenames1):
@@ -57,11 +57,11 @@ def rank1DeepFace():
                 positionMinValueRank1CosineList = distCosineList.index(min(distCosineList))
                 positionMinValueRank1EuclideanList = distEuclideanList.index(min(distEuclideanList))
                 positionMinValueRank1Euclidean_l2List = distEuclidean_l2List.index(min(distEuclidean_l2List))
-                #print(file1)
-                #print("positionMinValue " + str(positionMinValueRank1CosineList))
+                print(file1)
+                print("positionMinValue " + str(positionMinValueRank1CosineList))
                 if(id1 == id2List[positionMinValueRank1CosineList]):
                     numeradorRank1Cosine+=1
-                    #print("numeradorRank1 " + str(numeradorRank1Cosine))
+                    print("numeradorRank1 " + str(numeradorRank1Cosine))
                 if(id1 == id2List[positionMinValueRank1EuclideanList]):
                     numeradorRank1Euclidean+=1
                 if(id1 == id2List[positionMinValueRank1Euclidean_l2List]):
@@ -85,10 +85,7 @@ def distanceDeepFaceInterVideo():
                 pathWithOutBaseName1, id1 = os.path.split(dirpath1)
                 x, place1 = os.path.split(pathWithOutBaseName1)
                 timeFile1 = file1[0: 12]
-                vectorFeature1 = []
-                fileOutput1 = open(dirpath1 + "/" + timeFile1 + "_" + id1 + "_" + model +"_deepFaceVector.txt")
-                for line1 in fileOutput1:
-                    vectorFeature1.append(float(line1))
+                vectorFeature1 = np.load(dirpath1 + "/" + timeFile1 + "_" + id1 + "_" + model +"_deepFaceVector.npz")
                 fileOutput = open(dirpath1 + "/" + timeFile1 + "_" + id1 + "_" + model + "_deepFaceInterDistance.txt", "w")
                 for dirpath2, dirnames2, filenames2 in os.walk(params.path):
                     filenames2 = [f for f in filenames2 if not f[0] == '.' and f[-18:] == 'deepFaceVector.txt' and f.split("_")[5] == model]
@@ -97,10 +94,7 @@ def distanceDeepFaceInterVideo():
                         y, place2 = os.path.split(pathWithOutBaseName2)
                         timeFile2 = file2[0: 12]
                         if place1 != place2:
-                            vectorFeature2 = []
-                            fileOutput2 = open(dirpath2 + "/" + timeFile2 + "_" + id2 + "_" + model + "_deepFaceVector.txt")
-                            for line2 in fileOutput2:
-                                vectorFeature2.append(float(line2))
+                            vectorFeature2 = np.load(dirpath2 + "/" + timeFile2 + "_" + id2 + "_" + model + "_deepFaceVector.npz")
                             print(dirpath1 + "/" + file1 + " ===> " + dirpath2 + "/" + file2 + " ===> " )
                             distanceCosine, distanceEuclidean, distanceEuclidean_l2 = distanceVectorFeature(vectorFeature1, vectorFeature2)
                             fileOutput.write(place1 + " " + timeFile1 + " " + id1 + " " + place2 + " " + timeFile2 + " " + id2 + " " +  str(distanceCosine) + " " +  str(distanceEuclidean)  + " " +  str(distanceEuclidean_l2)  + " \n")
@@ -126,9 +120,7 @@ def deepFaceVector():
                     result = DeepFace.represent(dirpath + "/" + timeFile + "_" + id + "_body.png", model_name=modelName, enforce_detection=False)
                 except:
                     print("No se puede aplicar algoritmo" + dirpath + "/" + timeFile + "_" + id + "_body.png"  + " ===> " + modelName)
-                fileOutput = open(dirpath + "/" + timeFile + "_" + id + "_" + modelName + "_deepFaceVector.txt", "w")
-                for value in result:
-                    fileOutput.write(str(value) + "\n")
+                np.save(dirpath + "/" + timeFile + "_" + id + "_" + modelName + "_deepFaceVector", result)
 
 
 if __name__ == '__main__':
