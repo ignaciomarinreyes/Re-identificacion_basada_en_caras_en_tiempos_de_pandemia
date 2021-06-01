@@ -21,5 +21,12 @@ id InicioFrame FinFrame  nºaparaciones nºconMascarilla nºsinMascarilla nºNoD
 
 x y ancho alto del último faceBox detectado
 
+deepFaceInterResult
+===================
+
+place1 timeFile1 id1 place2 timeFile2 id2 distanceCosine distanceEuclidean distanceEuclidean_l2
+
+
+
 
 
