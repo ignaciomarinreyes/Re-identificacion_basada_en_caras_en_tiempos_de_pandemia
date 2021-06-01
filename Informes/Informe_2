@@ -325,3 +325,4076 @@ Tafira/1003/12_02_02_800_1003_body.jpg ===> Vegueta/6/10_18_53_200_6_body.jpg ==
 Tafira/1003/12_02_02_800_1003_body.jpg ===> Vegueta/6/10_18_53_400_6_body.jpg ===> 0.2973066388306791
 Tafira/1003/12_02_02_800_1003_body.jpg ===> Vegueta/6/10_18_53_600_6_body.jpg ===> 0.28517291384442334
 Tafira/1003/12_02_02_800_1003_body.jpg ===> Vegueta/6/10_18_53_800_6_body.jpg ===> 0.33294788883792525
+
+
+=================
+
+/Users/ignacio/PycharmProjects/untitled/venv/bin/python /Users/ignacio/TFG/TFG/MyAlgorithm/deepFace.py -r1 -p /Users/ignacio/TFG/TFG/data/Reidentification
+Using TensorFlow backend.
+============= VGG-Face ===================
+12_02_08_600_2001_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 38
+12_02_08_800_2001_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 27
+12_02_09_000_2001_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 75
+12_02_09_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 1
+12_02_09_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 15
+12_02_09_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 2
+12_02_10_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 3
+12_02_10_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 4
+12_02_10_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 5
+12_02_10_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 6
+12_02_10_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 7
+12_02_11_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 96
+12_02_11_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 8
+12_02_11_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 9
+12_02_11_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 10
+12_02_11_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 11
+12_02_12_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 12
+12_02_12_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 13
+12_02_12_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 14
+12_02_12_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 15
+12_02_12_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 16
+12_02_13_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 17
+12_02_13_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 18
+12_02_13_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 19
+12_02_13_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 20
+12_02_13_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 21
+12_02_14_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 22
+12_02_14_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 23
+12_02_14_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 24
+12_02_14_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 25
+12_02_14_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 26
+12_02_15_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 27
+12_02_15_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 28
+12_02_15_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 75
+12_02_15_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 29
+12_02_15_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 30
+12_02_16_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 31
+12_02_16_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 32
+12_02_16_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 33
+12_02_16_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 34
+12_02_16_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 35
+12_02_17_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 36
+12_02_17_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 37
+12_02_17_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 38
+12_02_17_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 39
+12_02_17_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 89
+12_02_18_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 40
+12_02_18_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 41
+12_02_18_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 91
+12_02_18_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 42
+12_02_18_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 67
+numeradorRank1 43
+12_02_19_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 44
+12_02_24_600_3002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 3
+12_02_24_800_3002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+12_02_00_600_3_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 29
+12_02_00_800_3_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 39
+12_02_19_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 45
+12_02_19_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 46
+12_02_19_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 47
+12_02_19_800_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 48
+12_02_20_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 49
+12_02_20_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 50
+12_02_20_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 51
+12_02_20_600_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 52
+12_02_20_800_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 53
+12_02_21_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 18
+12_02_21_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 54
+12_02_21_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 55
+12_02_21_600_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 17
+12_02_22_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 14
+numeradorRank1 56
+12_02_22_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 57
+12_02_22_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 20
+12_02_22_600_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 58
+12_02_00_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 39
+12_02_00_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 59
+12_02_00_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 27
+12_02_01_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 60
+12_02_01_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 61
+12_02_01_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 62
+12_02_01_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 63
+12_02_01_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 64
+12_02_02_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 65
+12_02_02_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 66
+12_02_02_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 67
+12_02_02_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 68
+12_02_02_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 69
+12_02_03_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 70
+12_02_03_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 71
+12_02_03_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 72
+12_02_03_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 73
+12_02_03_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 74
+12_02_04_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 75
+12_02_04_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 76
+12_02_04_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 77
+12_02_04_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 61
+12_02_04_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 78
+12_02_05_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 79
+12_02_05_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 66
+12_02_08_600_2001_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 36
+12_02_08_800_2001_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 25
+12_02_09_000_2001_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 77
+12_02_09_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 80
+12_02_09_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 15
+12_02_09_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 81
+12_02_10_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 82
+12_02_10_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 83
+12_02_10_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 84
+12_02_10_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 85
+12_02_10_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 86
+12_02_11_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 96
+12_02_11_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 87
+12_02_11_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 88
+12_02_11_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 89
+12_02_11_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 90
+12_02_12_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 91
+12_02_12_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 92
+12_02_12_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 93
+12_02_12_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 94
+12_02_12_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 95
+12_02_13_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 96
+12_02_13_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 97
+12_02_13_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 98
+12_02_13_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 99
+12_02_13_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 100
+12_02_14_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 101
+12_02_14_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 102
+12_02_14_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 103
+12_02_14_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 104
+12_02_14_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 105
+12_02_15_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 106
+12_02_15_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 107
+12_02_15_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 77
+12_02_15_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 108
+12_02_15_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 109
+12_02_16_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 110
+12_02_16_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 111
+12_02_16_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 112
+12_02_16_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 113
+12_02_16_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 114
+12_02_17_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 115
+12_02_17_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 116
+12_02_17_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 117
+12_02_17_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 118
+12_02_17_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 91
+12_02_18_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 119
+12_02_18_200_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 120
+12_02_18_400_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 93
+12_02_18_600_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 121
+12_02_18_800_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 122
+12_02_19_000_6_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 123
+12_02_24_600_3002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 3
+12_02_24_800_3002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+12_02_00_600_3_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 27
+12_02_00_800_3_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 37
+12_02_19_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 124
+12_02_19_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 125
+12_02_19_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 126
+12_02_19_800_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 127
+12_02_20_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 128
+12_02_20_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 129
+12_02_20_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 130
+12_02_20_600_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 131
+12_02_20_800_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 132
+12_02_21_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 67
+12_02_21_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 133
+12_02_21_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 134
+12_02_21_600_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 66
+12_02_22_000_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 14
+numeradorRank1 135
+12_02_22_200_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 136
+12_02_22_400_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 18
+12_02_22_600_2002_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 137
+12_02_00_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 37
+12_02_00_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 138
+12_02_00_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 25
+12_02_01_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 139
+12_02_01_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 140
+12_02_01_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 141
+12_02_01_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 142
+12_02_01_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 143
+12_02_02_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 144
+12_02_02_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 145
+12_02_02_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 146
+12_02_02_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 147
+12_02_02_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 148
+12_02_03_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 149
+12_02_03_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 150
+12_02_03_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 151
+12_02_03_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 152
+12_02_03_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 153
+12_02_04_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 154
+12_02_04_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 155
+12_02_04_400_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 156
+12_02_04_600_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 59
+12_02_04_800_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 157
+12_02_05_000_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 158
+12_02_05_200_2_VGG-Face_deepFaceInterDistance.txt
+positionMinValue 64
+========= RANK1 VGG-Face =============
+Cosine 0.8061224489795918
+Euclidean 1.0
+Euclidean_l2 1.0
+============= Facenet ===================
+12_02_08_600_2001_Facenet_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 1
+12_02_08_800_2001_Facenet_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 2
+12_02_09_000_2001_Facenet_deepFaceInterDistance.txt
+positionMinValue 2
+12_02_09_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 3
+12_02_09_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 4
+12_02_09_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 5
+12_02_10_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 6
+12_02_10_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 7
+12_02_10_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 8
+12_02_10_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 9
+12_02_10_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 10
+12_02_11_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 11
+12_02_11_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 12
+12_02_11_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 13
+12_02_11_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 14
+12_02_11_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 15
+12_02_12_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 16
+12_02_12_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 17
+12_02_12_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 18
+12_02_12_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 19
+12_02_12_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 20
+12_02_13_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 21
+12_02_13_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 22
+12_02_13_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 23
+12_02_13_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 24
+12_02_13_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 25
+12_02_14_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 26
+12_02_14_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 27
+12_02_14_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 28
+12_02_14_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 78
+12_02_14_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 29
+12_02_15_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 30
+12_02_15_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 31
+12_02_15_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 32
+12_02_15_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 33
+12_02_15_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 34
+12_02_16_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 35
+12_02_16_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 36
+12_02_16_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 37
+12_02_16_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 38
+12_02_16_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 39
+12_02_17_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 40
+12_02_17_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 41
+12_02_17_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 42
+12_02_17_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 43
+12_02_17_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 44
+12_02_18_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 45
+12_02_18_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 46
+12_02_18_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 47
+12_02_18_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 48
+12_02_18_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 49
+12_02_19_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 50
+12_02_24_600_3002_Facenet_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 51
+12_02_24_800_3002_Facenet_deepFaceInterDistance.txt
+positionMinValue 15
+12_02_00_600_3_Facenet_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 52
+12_02_00_800_3_Facenet_deepFaceInterDistance.txt
+positionMinValue 26
+12_02_19_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 53
+12_02_19_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 54
+12_02_19_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 55
+12_02_19_800_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 56
+12_02_20_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 57
+12_02_20_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 58
+12_02_20_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 59
+12_02_20_600_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 60
+12_02_20_800_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 61
+12_02_21_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 62
+12_02_21_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 10
+numeradorRank1 63
+12_02_21_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 64
+12_02_21_600_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 65
+12_02_22_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 66
+12_02_22_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 67
+12_02_22_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 68
+12_02_22_600_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 69
+12_02_00_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 70
+12_02_00_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 71
+12_02_00_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 72
+12_02_01_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 73
+12_02_01_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 74
+12_02_01_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 75
+12_02_01_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 76
+12_02_01_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 49
+12_02_02_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 77
+12_02_02_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 78
+12_02_02_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 79
+12_02_02_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 80
+12_02_02_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 81
+12_02_03_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 82
+12_02_03_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 83
+12_02_03_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 84
+12_02_03_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 85
+12_02_03_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 86
+12_02_04_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 87
+12_02_04_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 88
+12_02_04_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 89
+12_02_04_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 90
+12_02_04_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 91
+12_02_05_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 92
+12_02_05_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 93
+12_02_08_600_2001_Facenet_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 94
+12_02_08_800_2001_Facenet_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 95
+12_02_09_000_2001_Facenet_deepFaceInterDistance.txt
+positionMinValue 2
+12_02_09_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 96
+12_02_09_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 97
+12_02_09_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 98
+12_02_10_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 99
+12_02_10_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 100
+12_02_10_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 101
+12_02_10_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 102
+12_02_10_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 103
+12_02_11_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 104
+12_02_11_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 105
+12_02_11_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 106
+12_02_11_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 107
+12_02_11_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 108
+12_02_12_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 109
+12_02_12_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 110
+12_02_12_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 111
+12_02_12_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 112
+12_02_12_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 113
+12_02_13_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 114
+12_02_13_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 115
+12_02_13_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 116
+12_02_13_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 117
+12_02_13_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 118
+12_02_14_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 119
+12_02_14_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 120
+12_02_14_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 121
+12_02_14_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 80
+12_02_14_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 122
+12_02_15_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 123
+12_02_15_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 124
+12_02_15_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 125
+12_02_15_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 126
+12_02_15_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 127
+12_02_16_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 128
+12_02_16_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 129
+12_02_16_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 130
+12_02_16_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 131
+12_02_16_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 132
+12_02_17_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 133
+12_02_17_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 134
+12_02_17_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 135
+12_02_17_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 136
+12_02_17_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 137
+12_02_18_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 138
+12_02_18_200_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 139
+12_02_18_400_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 140
+12_02_18_600_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 141
+12_02_18_800_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 142
+12_02_19_000_6_Facenet_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 143
+12_02_24_600_3002_Facenet_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 144
+12_02_24_800_3002_Facenet_deepFaceInterDistance.txt
+positionMinValue 15
+12_02_00_600_3_Facenet_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 145
+12_02_00_800_3_Facenet_deepFaceInterDistance.txt
+positionMinValue 24
+12_02_19_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 146
+12_02_19_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 147
+12_02_19_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 148
+12_02_19_800_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 149
+12_02_20_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 150
+12_02_20_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 151
+12_02_20_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 152
+12_02_20_600_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 153
+12_02_20_800_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 154
+12_02_21_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 155
+12_02_21_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 10
+numeradorRank1 156
+12_02_21_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 157
+12_02_21_600_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 158
+12_02_22_000_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 159
+12_02_22_200_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 160
+12_02_22_400_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 161
+12_02_22_600_2002_Facenet_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 162
+12_02_00_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 163
+12_02_00_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 164
+12_02_00_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 165
+12_02_01_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 166
+12_02_01_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 167
+12_02_01_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 168
+12_02_01_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 169
+12_02_01_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 47
+12_02_02_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 170
+12_02_02_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 171
+12_02_02_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 172
+12_02_02_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 173
+12_02_02_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 174
+12_02_03_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 175
+12_02_03_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 176
+12_02_03_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 177
+12_02_03_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 178
+12_02_03_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 179
+12_02_04_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 180
+12_02_04_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 181
+12_02_04_400_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 182
+12_02_04_600_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 183
+12_02_04_800_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 184
+12_02_05_000_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 185
+12_02_05_200_2_Facenet_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 186
+========= RANK1 Facenet =============
+Cosine 0.9489795918367347
+Euclidean 1.0
+Euclidean_l2 1.0
+============= OpenFace ===================
+12_02_08_600_2001_OpenFace_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 1
+12_02_08_800_2001_OpenFace_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 2
+12_02_09_000_2001_OpenFace_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 3
+12_02_09_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 4
+12_02_09_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 5
+12_02_09_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 6
+12_02_10_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 7
+12_02_10_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 8
+12_02_10_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 9
+12_02_10_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 10
+12_02_10_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 11
+12_02_11_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 12
+12_02_11_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 13
+12_02_11_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 14
+12_02_11_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 15
+12_02_11_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 16
+12_02_12_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 17
+12_02_12_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 18
+12_02_12_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 19
+12_02_12_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 20
+12_02_12_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 21
+12_02_13_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 22
+12_02_13_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 23
+12_02_13_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 24
+12_02_13_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 25
+12_02_13_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 26
+12_02_14_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 27
+12_02_14_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 28
+12_02_14_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 29
+12_02_14_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 30
+12_02_14_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 31
+12_02_15_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 32
+12_02_15_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 33
+12_02_15_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 34
+12_02_15_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 35
+12_02_15_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 36
+12_02_16_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 37
+12_02_16_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 38
+12_02_16_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 39
+12_02_16_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 40
+12_02_16_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 41
+12_02_17_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 42
+12_02_17_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 43
+12_02_17_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 87
+12_02_17_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 44
+12_02_17_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 45
+12_02_18_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 88
+12_02_18_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 46
+12_02_18_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 47
+12_02_18_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 48
+12_02_18_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 49
+12_02_19_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 97
+12_02_24_600_3002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 50
+12_02_24_800_3002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 15
+12_02_00_600_3_OpenFace_deepFaceInterDistance.txt
+positionMinValue 97
+12_02_00_800_3_OpenFace_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 51
+12_02_19_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 52
+12_02_19_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 53
+12_02_19_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 97
+12_02_19_800_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 54
+12_02_20_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 55
+12_02_20_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 24
+12_02_20_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 56
+12_02_20_600_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 57
+12_02_20_800_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 58
+12_02_21_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 59
+12_02_21_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 10
+numeradorRank1 60
+12_02_21_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 61
+12_02_21_600_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 37
+12_02_22_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 62
+12_02_22_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 63
+12_02_22_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 64
+12_02_22_600_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 65
+12_02_00_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 66
+12_02_00_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 67
+12_02_00_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 68
+12_02_01_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 69
+12_02_01_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 70
+12_02_01_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 71
+12_02_01_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 72
+12_02_01_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 73
+12_02_02_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 74
+12_02_02_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 75
+12_02_02_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 76
+12_02_02_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 77
+12_02_02_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 78
+12_02_03_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 79
+12_02_03_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 80
+12_02_03_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 81
+12_02_03_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 82
+12_02_03_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 83
+12_02_04_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 84
+12_02_04_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 85
+12_02_04_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 86
+12_02_04_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 87
+12_02_04_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 88
+12_02_05_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 89
+12_02_05_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 90
+12_02_08_600_2001_OpenFace_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 91
+12_02_08_800_2001_OpenFace_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 92
+12_02_09_000_2001_OpenFace_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 93
+12_02_09_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 94
+12_02_09_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 95
+12_02_09_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 96
+12_02_10_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 97
+12_02_10_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 98
+12_02_10_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 99
+12_02_10_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 100
+12_02_10_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 101
+12_02_11_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 102
+12_02_11_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 103
+12_02_11_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 104
+12_02_11_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 105
+12_02_11_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 106
+12_02_12_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 107
+12_02_12_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 108
+12_02_12_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 109
+12_02_12_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 110
+12_02_12_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 111
+12_02_13_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 112
+12_02_13_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 113
+12_02_13_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 114
+12_02_13_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 115
+12_02_13_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 116
+12_02_14_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 117
+12_02_14_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 118
+12_02_14_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 119
+12_02_14_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 120
+12_02_14_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 121
+12_02_15_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 122
+12_02_15_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 123
+12_02_15_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 124
+12_02_15_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 125
+12_02_15_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 126
+12_02_16_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 127
+12_02_16_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 128
+12_02_16_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 129
+12_02_16_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 130
+12_02_16_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 131
+12_02_17_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 132
+12_02_17_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 133
+12_02_17_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 89
+12_02_17_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 134
+12_02_17_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 135
+12_02_18_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 90
+12_02_18_200_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 136
+12_02_18_400_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 137
+12_02_18_600_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 138
+12_02_18_800_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 139
+12_02_19_000_6_OpenFace_deepFaceInterDistance.txt
+positionMinValue 97
+12_02_24_600_3002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 140
+12_02_24_800_3002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 15
+12_02_00_600_3_OpenFace_deepFaceInterDistance.txt
+positionMinValue 97
+12_02_00_800_3_OpenFace_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 141
+12_02_19_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 142
+12_02_19_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 143
+12_02_19_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 97
+12_02_19_800_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 144
+12_02_20_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 145
+12_02_20_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 22
+12_02_20_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 146
+12_02_20_600_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 147
+12_02_20_800_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 148
+12_02_21_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 149
+12_02_21_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 10
+numeradorRank1 150
+12_02_21_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 151
+12_02_21_600_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 35
+12_02_22_000_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 152
+12_02_22_200_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 153
+12_02_22_400_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 154
+12_02_22_600_2002_OpenFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 155
+12_02_00_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 156
+12_02_00_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 157
+12_02_00_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 158
+12_02_01_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 159
+12_02_01_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 160
+12_02_01_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 161
+12_02_01_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 162
+12_02_01_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 163
+12_02_02_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 164
+12_02_02_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 165
+12_02_02_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 166
+12_02_02_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 167
+12_02_02_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 168
+12_02_03_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 169
+12_02_03_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 170
+12_02_03_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 171
+12_02_03_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 172
+12_02_03_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 173
+12_02_04_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 174
+12_02_04_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 175
+12_02_04_400_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 176
+12_02_04_600_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 177
+12_02_04_800_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 178
+12_02_05_000_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 179
+12_02_05_200_2_OpenFace_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 180
+========= RANK1 OpenFace =============
+Cosine 0.9183673469387755
+Euclidean 1.0
+Euclidean_l2 1.0
+============= DeepFace ===================
+12_02_08_600_2001_DeepFace_deepFaceInterDistance.txt
+positionMinValue 39
+12_02_08_800_2001_DeepFace_deepFaceInterDistance.txt
+positionMinValue 21
+12_02_09_000_2001_DeepFace_deepFaceInterDistance.txt
+positionMinValue 19
+12_02_09_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 1
+12_02_09_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 2
+12_02_09_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 3
+12_02_10_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 4
+12_02_10_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 5
+12_02_10_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 6
+12_02_10_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 7
+12_02_10_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 8
+12_02_11_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 9
+12_02_11_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 10
+12_02_11_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 11
+12_02_11_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 12
+12_02_11_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 13
+12_02_12_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 14
+12_02_12_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 15
+12_02_12_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 16
+12_02_12_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 17
+12_02_12_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 18
+12_02_13_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 19
+12_02_13_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 20
+12_02_13_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 21
+12_02_13_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 22
+12_02_13_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 23
+12_02_14_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 24
+12_02_14_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 25
+12_02_14_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 26
+12_02_14_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 27
+12_02_14_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 28
+12_02_15_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 29
+12_02_15_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 30
+12_02_15_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 31
+12_02_15_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 32
+12_02_15_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 33
+12_02_16_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 34
+12_02_16_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 35
+12_02_16_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 36
+12_02_16_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 37
+12_02_16_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 38
+12_02_17_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 39
+12_02_17_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 40
+12_02_17_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 41
+12_02_17_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 42
+12_02_17_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 43
+12_02_18_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 44
+12_02_18_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 45
+12_02_18_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 46
+12_02_18_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 47
+12_02_18_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 67
+numeradorRank1 48
+12_02_19_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 49
+12_02_24_600_3002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 16
+12_02_24_800_3002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 50
+12_02_00_600_3_DeepFace_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 51
+12_02_00_800_3_DeepFace_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 52
+12_02_19_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 25
+12_02_19_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 53
+12_02_19_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 41
+12_02_19_800_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 31
+12_02_20_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 23
+12_02_20_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 54
+12_02_20_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 25
+12_02_20_600_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 55
+12_02_20_800_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 56
+12_02_21_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 57
+12_02_21_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 58
+12_02_21_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 59
+12_02_21_600_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 60
+12_02_22_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 61
+12_02_22_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 62
+12_02_22_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 63
+12_02_22_600_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 64
+12_02_00_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 65
+12_02_00_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 66
+12_02_00_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 67
+12_02_01_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 33
+12_02_01_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 68
+12_02_01_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 48
+12_02_01_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 69
+12_02_01_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 50
+12_02_02_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 70
+12_02_02_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 71
+12_02_02_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 72
+12_02_02_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 73
+12_02_02_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 74
+12_02_03_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 75
+12_02_03_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 76
+12_02_03_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 77
+12_02_03_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 78
+12_02_03_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 79
+12_02_04_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 80
+12_02_04_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 81
+12_02_04_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 82
+12_02_04_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 83
+12_02_04_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 84
+12_02_05_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 85
+12_02_05_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 66
+12_02_08_600_2001_DeepFace_deepFaceInterDistance.txt
+positionMinValue 37
+12_02_08_800_2001_DeepFace_deepFaceInterDistance.txt
+positionMinValue 19
+12_02_09_000_2001_DeepFace_deepFaceInterDistance.txt
+positionMinValue 17
+12_02_09_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 86
+12_02_09_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 87
+12_02_09_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 88
+12_02_10_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 89
+12_02_10_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 90
+12_02_10_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 91
+12_02_10_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 92
+12_02_10_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 93
+12_02_11_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 94
+12_02_11_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 95
+12_02_11_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 96
+12_02_11_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 97
+12_02_11_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 98
+12_02_12_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 99
+12_02_12_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 100
+12_02_12_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 101
+12_02_12_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 102
+12_02_12_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 103
+12_02_13_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 104
+12_02_13_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 105
+12_02_13_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 106
+12_02_13_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 107
+12_02_13_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 108
+12_02_14_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 109
+12_02_14_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 110
+12_02_14_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 111
+12_02_14_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 112
+12_02_14_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 113
+12_02_15_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 114
+12_02_15_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 115
+12_02_15_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 116
+12_02_15_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 117
+12_02_15_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 118
+12_02_16_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 119
+12_02_16_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 120
+12_02_16_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 121
+12_02_16_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 122
+12_02_16_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 123
+12_02_17_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 124
+12_02_17_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 125
+12_02_17_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 126
+12_02_17_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 127
+12_02_17_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 128
+12_02_18_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 129
+12_02_18_200_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 130
+12_02_18_400_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 131
+12_02_18_600_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 132
+12_02_18_800_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 133
+12_02_19_000_6_DeepFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 134
+12_02_24_600_3002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 16
+12_02_24_800_3002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 67
+numeradorRank1 135
+12_02_00_600_3_DeepFace_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 136
+12_02_00_800_3_DeepFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 137
+12_02_19_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 23
+12_02_19_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 138
+12_02_19_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 39
+12_02_19_800_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 29
+12_02_20_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 21
+12_02_20_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 139
+12_02_20_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 23
+12_02_20_600_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 140
+12_02_20_800_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 141
+12_02_21_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 142
+12_02_21_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 143
+12_02_21_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 144
+12_02_21_600_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 145
+12_02_22_000_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 146
+12_02_22_200_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 147
+12_02_22_400_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 148
+12_02_22_600_2002_DeepFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 149
+12_02_00_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 150
+12_02_00_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 151
+12_02_00_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 152
+12_02_01_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 31
+12_02_01_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 153
+12_02_01_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 46
+12_02_01_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 154
+12_02_01_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 48
+12_02_02_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 155
+12_02_02_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 156
+12_02_02_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 157
+12_02_02_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 158
+12_02_02_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 159
+12_02_03_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 160
+12_02_03_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 161
+12_02_03_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 162
+12_02_03_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 163
+12_02_03_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 164
+12_02_04_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 165
+12_02_04_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 166
+12_02_04_400_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 167
+12_02_04_600_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 168
+12_02_04_800_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 169
+12_02_05_000_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 170
+12_02_05_200_2_DeepFace_deepFaceInterDistance.txt
+positionMinValue 64
+========= RANK1 DeepFace =============
+Cosine 0.8673469387755102
+Euclidean 1.0
+Euclidean_l2 1.0
+============= DeepID ===================
+12_02_08_600_2001_DeepID_deepFaceInterDistance.txt
+positionMinValue 3
+12_02_08_800_2001_DeepID_deepFaceInterDistance.txt
+positionMinValue 29
+12_02_09_000_2001_DeepID_deepFaceInterDistance.txt
+positionMinValue 97
+numeradorRank1 1
+12_02_09_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 2
+12_02_09_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 3
+12_02_09_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 4
+12_02_10_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 5
+12_02_10_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 6
+12_02_10_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 7
+12_02_10_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 8
+12_02_10_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 9
+12_02_11_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 10
+12_02_11_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 11
+12_02_11_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 12
+12_02_11_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 13
+12_02_11_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 14
+12_02_12_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 15
+12_02_12_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 16
+12_02_12_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 17
+12_02_12_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 18
+12_02_12_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 19
+12_02_13_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 20
+12_02_13_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 21
+12_02_13_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 22
+12_02_13_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 23
+12_02_13_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 24
+12_02_14_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 25
+12_02_14_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 26
+12_02_14_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 27
+12_02_14_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 28
+12_02_14_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 29
+12_02_15_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 30
+12_02_15_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 31
+12_02_15_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 32
+12_02_15_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 33
+12_02_15_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 34
+12_02_16_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 35
+12_02_16_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 36
+12_02_16_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 37
+12_02_16_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 38
+12_02_16_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 39
+12_02_17_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 40
+12_02_17_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 41
+12_02_17_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 42
+12_02_17_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 43
+12_02_17_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 44
+12_02_18_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 45
+12_02_18_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 46
+12_02_18_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 47
+12_02_18_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 48
+12_02_18_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 49
+12_02_19_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 67
+numeradorRank1 50
+12_02_24_600_3002_DeepID_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 51
+12_02_24_800_3002_DeepID_deepFaceInterDistance.txt
+positionMinValue 14
+12_02_00_600_3_DeepID_deepFaceInterDistance.txt
+positionMinValue 33
+12_02_00_800_3_DeepID_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 52
+12_02_19_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 53
+12_02_19_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 54
+12_02_19_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 55
+12_02_19_800_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 56
+12_02_20_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 57
+12_02_20_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 58
+12_02_20_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 59
+12_02_20_600_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 60
+12_02_20_800_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 61
+12_02_21_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 62
+12_02_21_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 10
+numeradorRank1 63
+12_02_21_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 64
+12_02_21_600_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 65
+12_02_22_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 66
+12_02_22_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 14
+numeradorRank1 67
+12_02_22_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 68
+12_02_22_600_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 69
+12_02_00_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 70
+12_02_00_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 71
+12_02_00_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 72
+12_02_01_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 73
+12_02_01_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 74
+12_02_01_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 75
+12_02_01_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 76
+12_02_01_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 77
+12_02_02_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 78
+12_02_02_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 79
+12_02_02_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 80
+12_02_02_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 81
+12_02_02_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 82
+12_02_03_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 83
+12_02_03_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 84
+12_02_03_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 85
+12_02_03_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 86
+12_02_03_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 87
+12_02_04_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 88
+12_02_04_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 89
+12_02_04_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 90
+12_02_04_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 91
+12_02_04_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 92
+12_02_05_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 93
+12_02_05_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 94
+12_02_08_600_2001_DeepID_deepFaceInterDistance.txt
+positionMinValue 3
+12_02_08_800_2001_DeepID_deepFaceInterDistance.txt
+positionMinValue 27
+12_02_09_000_2001_DeepID_deepFaceInterDistance.txt
+positionMinValue 97
+numeradorRank1 95
+12_02_09_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 96
+12_02_09_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 97
+12_02_09_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 98
+12_02_10_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 99
+12_02_10_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 100
+12_02_10_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 101
+12_02_10_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 102
+12_02_10_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 103
+12_02_11_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 104
+12_02_11_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 105
+12_02_11_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 106
+12_02_11_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 107
+12_02_11_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 108
+12_02_12_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 109
+12_02_12_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 110
+12_02_12_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 111
+12_02_12_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 112
+12_02_12_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 113
+12_02_13_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 114
+12_02_13_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 115
+12_02_13_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 116
+12_02_13_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 117
+12_02_13_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 118
+12_02_14_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 119
+12_02_14_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 120
+12_02_14_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 121
+12_02_14_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 122
+12_02_14_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 123
+12_02_15_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 124
+12_02_15_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 125
+12_02_15_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 126
+12_02_15_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 127
+12_02_15_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 128
+12_02_16_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 129
+12_02_16_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 130
+12_02_16_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 131
+12_02_16_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 132
+12_02_16_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 133
+12_02_17_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 134
+12_02_17_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 135
+12_02_17_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 136
+12_02_17_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 137
+12_02_17_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 138
+12_02_18_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 139
+12_02_18_200_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 140
+12_02_18_400_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 141
+12_02_18_600_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 44
+numeradorRank1 142
+12_02_18_800_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 143
+12_02_19_000_6_DeepID_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 144
+12_02_24_600_3002_DeepID_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 145
+12_02_24_800_3002_DeepID_deepFaceInterDistance.txt
+positionMinValue 14
+12_02_00_600_3_DeepID_deepFaceInterDistance.txt
+positionMinValue 31
+12_02_00_800_3_DeepID_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 146
+12_02_19_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 147
+12_02_19_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 148
+12_02_19_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 149
+12_02_19_800_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 150
+12_02_20_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 151
+12_02_20_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 152
+12_02_20_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 153
+12_02_20_600_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 154
+12_02_20_800_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 155
+12_02_21_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 156
+12_02_21_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 10
+numeradorRank1 157
+12_02_21_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 11
+numeradorRank1 158
+12_02_21_600_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 159
+12_02_22_000_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 160
+12_02_22_200_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 14
+numeradorRank1 161
+12_02_22_400_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 162
+12_02_22_600_2002_DeepID_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 163
+12_02_00_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 164
+12_02_00_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 165
+12_02_00_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 166
+12_02_01_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 167
+12_02_01_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 168
+12_02_01_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 169
+12_02_01_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 170
+12_02_01_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 171
+12_02_02_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 172
+12_02_02_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 173
+12_02_02_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 174
+12_02_02_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 175
+12_02_02_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 176
+12_02_03_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 177
+12_02_03_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 178
+12_02_03_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 179
+12_02_03_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 180
+12_02_03_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 181
+12_02_04_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 182
+12_02_04_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 183
+12_02_04_400_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 184
+12_02_04_600_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 185
+12_02_04_800_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 186
+12_02_05_000_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 187
+12_02_05_200_2_DeepID_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 188
+========= RANK1 DeepID =============
+Cosine 0.9591836734693877
+Euclidean 1.0
+Euclidean_l2 1.0
+============= Dlib ===================
+12_02_08_600_2001_Dlib_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 1
+12_02_08_800_2001_Dlib_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 2
+12_02_09_000_2001_Dlib_deepFaceInterDistance.txt
+positionMinValue 97
+numeradorRank1 3
+12_02_09_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 4
+12_02_09_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 5
+12_02_09_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 6
+12_02_10_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 7
+12_02_10_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 8
+12_02_10_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 9
+12_02_10_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 10
+12_02_10_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 11
+12_02_11_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 12
+12_02_11_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 13
+12_02_11_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 14
+12_02_11_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 15
+12_02_11_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 16
+12_02_12_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 17
+12_02_12_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 18
+12_02_12_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 19
+12_02_12_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 20
+12_02_12_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 21
+12_02_13_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 22
+12_02_13_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 23
+12_02_13_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 24
+12_02_13_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 25
+12_02_13_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 26
+12_02_14_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 27
+12_02_14_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 28
+12_02_14_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 29
+12_02_14_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 30
+12_02_14_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 31
+12_02_15_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 32
+12_02_15_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 48
+numeradorRank1 33
+12_02_15_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 34
+12_02_15_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 35
+12_02_15_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 36
+12_02_16_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 37
+12_02_16_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 38
+12_02_16_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 39
+12_02_16_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 40
+12_02_16_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 41
+12_02_17_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 42
+12_02_17_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 43
+12_02_17_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 44
+12_02_17_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 45
+12_02_17_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 46
+12_02_18_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 47
+12_02_18_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 48
+12_02_18_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 49
+12_02_18_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 50
+12_02_18_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 92
+12_02_19_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 67
+numeradorRank1 51
+12_02_24_600_3002_Dlib_deepFaceInterDistance.txt
+positionMinValue 20
+12_02_24_800_3002_Dlib_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 52
+12_02_00_600_3_Dlib_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 53
+12_02_00_800_3_Dlib_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 54
+12_02_19_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 55
+12_02_19_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 56
+12_02_19_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 94
+12_02_19_800_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 57
+12_02_20_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 58
+12_02_20_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 59
+12_02_20_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 60
+12_02_20_600_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 61
+12_02_20_800_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 62
+12_02_21_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 63
+12_02_21_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 64
+12_02_21_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 65
+12_02_21_600_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 66
+12_02_22_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 67
+12_02_22_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 14
+numeradorRank1 68
+12_02_22_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 69
+12_02_22_600_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 70
+12_02_00_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 71
+12_02_00_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 72
+12_02_00_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 73
+12_02_01_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 74
+12_02_01_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 75
+12_02_01_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 76
+12_02_01_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 77
+12_02_01_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 78
+12_02_02_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 79
+12_02_02_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 80
+12_02_02_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 81
+12_02_02_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 82
+12_02_02_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 83
+12_02_03_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 84
+12_02_03_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 85
+12_02_03_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 86
+12_02_03_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 87
+12_02_03_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 88
+12_02_04_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 89
+12_02_04_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 90
+12_02_04_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 91
+12_02_04_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 92
+12_02_04_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 93
+12_02_05_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 94
+12_02_05_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 95
+12_02_08_600_2001_Dlib_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 96
+12_02_08_800_2001_Dlib_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 97
+12_02_09_000_2001_Dlib_deepFaceInterDistance.txt
+positionMinValue 97
+numeradorRank1 98
+12_02_09_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 99
+12_02_09_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 100
+12_02_09_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 101
+12_02_10_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 102
+12_02_10_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 103
+12_02_10_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 104
+12_02_10_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 105
+12_02_10_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 106
+12_02_11_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 107
+12_02_11_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 108
+12_02_11_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 109
+12_02_11_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 110
+12_02_11_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 111
+12_02_12_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 112
+12_02_12_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 113
+12_02_12_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 114
+12_02_12_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 115
+12_02_12_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 116
+12_02_13_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 117
+12_02_13_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 118
+12_02_13_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 37
+numeradorRank1 119
+12_02_13_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 120
+12_02_13_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 39
+numeradorRank1 121
+12_02_14_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 122
+12_02_14_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 123
+12_02_14_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 124
+12_02_14_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 125
+12_02_14_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 126
+12_02_15_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 127
+12_02_15_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 46
+numeradorRank1 128
+12_02_15_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 129
+12_02_15_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 130
+12_02_15_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 131
+12_02_16_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 132
+12_02_16_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 133
+12_02_16_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 134
+12_02_16_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 135
+12_02_16_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 136
+12_02_17_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 137
+12_02_17_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 138
+12_02_17_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 139
+12_02_17_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 140
+12_02_17_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 141
+12_02_18_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 142
+12_02_18_200_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 143
+12_02_18_400_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 144
+12_02_18_600_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 145
+12_02_18_800_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 94
+12_02_19_000_6_Dlib_deepFaceInterDistance.txt
+positionMinValue 65
+numeradorRank1 146
+12_02_24_600_3002_Dlib_deepFaceInterDistance.txt
+positionMinValue 18
+12_02_24_800_3002_Dlib_deepFaceInterDistance.txt
+positionMinValue 67
+numeradorRank1 147
+12_02_00_600_3_Dlib_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 148
+12_02_00_800_3_Dlib_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 149
+12_02_19_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 0
+numeradorRank1 150
+12_02_19_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 151
+12_02_19_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 69
+12_02_19_800_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 152
+12_02_20_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 4
+numeradorRank1 153
+12_02_20_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 154
+12_02_20_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 155
+12_02_20_600_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 156
+12_02_20_800_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 157
+12_02_21_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 158
+12_02_21_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 159
+12_02_21_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 160
+12_02_21_600_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 161
+12_02_22_000_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 162
+12_02_22_200_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 14
+numeradorRank1 163
+12_02_22_400_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 164
+12_02_22_600_2002_Dlib_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 165
+12_02_00_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 166
+12_02_00_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 167
+12_02_00_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 168
+12_02_01_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 169
+12_02_01_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 170
+12_02_01_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 171
+12_02_01_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 172
+12_02_01_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 173
+12_02_02_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 174
+12_02_02_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 175
+12_02_02_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 176
+12_02_02_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 81
+numeradorRank1 177
+12_02_02_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 178
+12_02_03_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 179
+12_02_03_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 180
+12_02_03_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 181
+12_02_03_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 182
+12_02_03_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 183
+12_02_04_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 87
+numeradorRank1 184
+12_02_04_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 185
+12_02_04_400_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 186
+12_02_04_600_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 187
+12_02_04_800_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 188
+12_02_05_000_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 189
+12_02_05_200_2_Dlib_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 190
+========= RANK1 Dlib =============
+Cosine 0.9693877551020408
+Euclidean 1.0
+Euclidean_l2 1.0
+============= ArcFace ===================
+12_02_08_600_2001_ArcFace_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 1
+12_02_08_800_2001_ArcFace_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 2
+12_02_09_000_2001_ArcFace_deepFaceInterDistance.txt
+positionMinValue 97
+numeradorRank1 3
+12_02_09_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 19
+numeradorRank1 4
+12_02_09_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 20
+numeradorRank1 5
+12_02_09_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 6
+12_02_10_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 7
+12_02_10_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 8
+12_02_10_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 9
+12_02_10_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 10
+12_02_10_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 11
+12_02_11_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 12
+12_02_11_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 13
+12_02_11_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 14
+12_02_11_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 30
+numeradorRank1 15
+12_02_11_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 16
+12_02_12_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 17
+12_02_12_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 18
+12_02_12_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 19
+12_02_12_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 35
+numeradorRank1 20
+12_02_12_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 21
+12_02_13_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 22
+12_02_13_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 23
+12_02_13_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 24
+12_02_13_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 36
+numeradorRank1 25
+12_02_13_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 26
+12_02_14_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 27
+12_02_14_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 28
+12_02_14_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 42
+numeradorRank1 29
+12_02_14_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 30
+12_02_14_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 75
+12_02_15_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 43
+numeradorRank1 31
+12_02_15_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 75
+12_02_15_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 32
+12_02_15_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 33
+12_02_15_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 34
+12_02_16_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 35
+12_02_16_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 36
+12_02_16_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 54
+numeradorRank1 37
+12_02_16_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 38
+12_02_16_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 79
+12_02_17_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 55
+numeradorRank1 39
+12_02_17_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 40
+12_02_17_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 41
+12_02_17_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 60
+numeradorRank1 42
+12_02_17_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 43
+12_02_18_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 44
+12_02_18_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 45
+12_02_18_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 63
+numeradorRank1 46
+12_02_18_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 91
+12_02_18_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 47
+12_02_19_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 66
+numeradorRank1 48
+12_02_24_600_3002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 12
+12_02_24_800_3002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 5
+12_02_00_600_3_ArcFace_deepFaceInterDistance.txt
+positionMinValue 93
+numeradorRank1 49
+12_02_00_800_3_ArcFace_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 50
+12_02_19_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 51
+12_02_19_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 52
+12_02_19_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 53
+12_02_19_800_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 54
+12_02_20_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 55
+12_02_20_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 56
+12_02_20_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 57
+12_02_20_600_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 58
+12_02_20_800_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 59
+12_02_21_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 60
+12_02_21_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 61
+12_02_21_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 62
+12_02_21_600_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 63
+12_02_22_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 64
+12_02_22_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 65
+12_02_22_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 66
+12_02_22_600_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 67
+12_02_00_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 68
+12_02_00_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 69
+12_02_00_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 70
+12_02_01_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 71
+12_02_01_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 72
+12_02_01_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 73
+12_02_01_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 74
+12_02_01_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 75
+12_02_02_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 76
+12_02_02_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 77
+12_02_02_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 78
+12_02_02_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 78
+numeradorRank1 79
+12_02_02_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 80
+12_02_03_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 81
+12_02_03_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 82
+12_02_03_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 83
+12_02_03_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 84
+12_02_03_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 83
+numeradorRank1 85
+12_02_04_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 86
+12_02_04_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 87
+12_02_04_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 90
+numeradorRank1 88
+12_02_04_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 89
+numeradorRank1 89
+12_02_04_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 90
+12_02_05_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 91
+12_02_05_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 92
+12_02_08_600_2001_ArcFace_deepFaceInterDistance.txt
+positionMinValue 95
+numeradorRank1 93
+12_02_08_800_2001_ArcFace_deepFaceInterDistance.txt
+positionMinValue 96
+numeradorRank1 94
+12_02_09_000_2001_ArcFace_deepFaceInterDistance.txt
+positionMinValue 97
+numeradorRank1 95
+12_02_09_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 17
+numeradorRank1 96
+12_02_09_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 18
+numeradorRank1 97
+12_02_09_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 98
+12_02_10_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 99
+12_02_10_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 21
+numeradorRank1 100
+12_02_10_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 22
+numeradorRank1 101
+12_02_10_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 102
+12_02_10_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 24
+numeradorRank1 103
+12_02_11_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 25
+numeradorRank1 104
+12_02_11_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 105
+12_02_11_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 106
+12_02_11_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 28
+numeradorRank1 107
+12_02_11_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 29
+numeradorRank1 108
+12_02_12_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 109
+12_02_12_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 110
+12_02_12_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 111
+12_02_12_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 33
+numeradorRank1 112
+12_02_12_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 38
+numeradorRank1 113
+12_02_13_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 32
+numeradorRank1 114
+12_02_13_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 26
+numeradorRank1 115
+12_02_13_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 27
+numeradorRank1 116
+12_02_13_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 34
+numeradorRank1 117
+12_02_13_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 31
+numeradorRank1 118
+12_02_14_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 119
+12_02_14_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 120
+12_02_14_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 40
+numeradorRank1 121
+12_02_14_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 45
+numeradorRank1 122
+12_02_14_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 77
+12_02_15_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 41
+numeradorRank1 123
+12_02_15_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 77
+12_02_15_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 124
+12_02_15_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 125
+12_02_15_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 49
+numeradorRank1 126
+12_02_16_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 50
+numeradorRank1 127
+12_02_16_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 51
+numeradorRank1 128
+12_02_16_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 52
+numeradorRank1 129
+12_02_16_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 47
+numeradorRank1 130
+12_02_16_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 81
+12_02_17_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 53
+numeradorRank1 131
+12_02_17_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 56
+numeradorRank1 132
+12_02_17_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 133
+12_02_17_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 58
+numeradorRank1 134
+12_02_17_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 59
+numeradorRank1 135
+12_02_18_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 57
+numeradorRank1 136
+12_02_18_200_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 62
+numeradorRank1 137
+12_02_18_400_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 61
+numeradorRank1 138
+12_02_18_600_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 93
+12_02_18_800_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 23
+numeradorRank1 139
+12_02_19_000_6_ArcFace_deepFaceInterDistance.txt
+positionMinValue 64
+numeradorRank1 140
+12_02_24_600_3002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 12
+12_02_24_800_3002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 5
+12_02_00_600_3_ArcFace_deepFaceInterDistance.txt
+positionMinValue 68
+numeradorRank1 141
+12_02_00_800_3_ArcFace_deepFaceInterDistance.txt
+positionMinValue 69
+numeradorRank1 142
+12_02_19_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 143
+12_02_19_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 1
+numeradorRank1 144
+12_02_19_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 145
+12_02_19_800_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 3
+numeradorRank1 146
+12_02_20_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 147
+12_02_20_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 5
+numeradorRank1 148
+12_02_20_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 6
+numeradorRank1 149
+12_02_20_600_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 150
+12_02_20_800_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 8
+numeradorRank1 151
+12_02_21_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 9
+numeradorRank1 152
+12_02_21_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 153
+12_02_21_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 7
+numeradorRank1 154
+12_02_21_600_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 12
+numeradorRank1 155
+12_02_22_000_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 13
+numeradorRank1 156
+12_02_22_200_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 16
+numeradorRank1 157
+12_02_22_400_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 15
+numeradorRank1 158
+12_02_22_600_2002_ArcFace_deepFaceInterDistance.txt
+positionMinValue 2
+numeradorRank1 159
+12_02_00_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 72
+numeradorRank1 160
+12_02_00_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 71
+numeradorRank1 161
+12_02_00_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 70
+numeradorRank1 162
+12_02_01_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 73
+numeradorRank1 163
+12_02_01_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 74
+numeradorRank1 164
+12_02_01_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 75
+numeradorRank1 165
+12_02_01_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 76
+numeradorRank1 166
+12_02_01_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 167
+12_02_02_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 77
+numeradorRank1 168
+12_02_02_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 169
+12_02_02_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 170
+12_02_02_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 80
+numeradorRank1 171
+12_02_02_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 172
+12_02_03_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 173
+12_02_03_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 82
+numeradorRank1 174
+12_02_03_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 84
+numeradorRank1 175
+12_02_03_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 176
+12_02_03_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 85
+numeradorRank1 177
+12_02_04_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 88
+numeradorRank1 178
+12_02_04_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 179
+12_02_04_400_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 92
+numeradorRank1 180
+12_02_04_600_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 91
+numeradorRank1 181
+12_02_04_800_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 79
+numeradorRank1 182
+12_02_05_000_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 86
+numeradorRank1 183
+12_02_05_200_2_ArcFace_deepFaceInterDistance.txt
+positionMinValue 94
+numeradorRank1 184
+========= RANK1 ArcFace =============
+Cosine 0.9387755102040817
+Euclidean 1.0
+Euclidean_l2 1.0
+
+Process finished with exit code 0
+==============
+
+========= RANK1 VGG-Face =============
+Cosine 0.8061224489795918
+Euclidean 1.0
+Euclidean_l2 1.0
+========= RANK1 Facenet =============
+Cosine 0.9489795918367347
+Euclidean 1.0
+Euclidean_l2 1.0
+========= RANK1 OpenFace =============
+Cosine 0.9183673469387755
+Euclidean 1.0
+Euclidean_l2 1.0
+========= RANK1 DeepFace =============
+Cosine 0.8673469387755102
+Euclidean 1.0
+Euclidean_l2 1.0
+========= RANK1 DeepID =============
+Cosine 0.9591836734693877
+Euclidean 1.0
+Euclidean_l2 1.0
+========= RANK1 Dlib =============
+Cosine 0.9693877551020408
+Euclidean 1.0
+Euclidean_l2 1.0
+========= RANK1 ArcFace =============
+Cosine 0.9387755102040817
+Euclidean 1.0
+Euclidean_l2 1.0

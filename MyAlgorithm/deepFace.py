@@ -16,6 +16,7 @@ def parse_arguments():
     parser.add_argument('-distInter', '-die', action='store_true')
     parser.add_argument('-distIntra', '-dia', action='store_true')
     parser.add_argument('-vector', '-v', action='store_true')
+    parser.add_argument('-rank1', '-r1', action='store_true')
     args = parser.parse_args()
     return args
 
@@ -29,6 +30,50 @@ def distanceVectorFeature(vImage1, vImage2):
     distanceEuclidean_l2 = np.float64(distanceEuclidean_l2)
     return distanceCosine, distanceEuclidean, distanceEuclidean_l2
 
+#distanceCosine, distanceEuclidean, distanceEuclidean_l2
+# -r1 -p "/Users/ignacio/TFG/TFG/data/Reidentification"
+def rank1DeepFace():
+    model_names = ["VGG-Face", "Facenet", "OpenFace", "DeepFace", "DeepID", "Dlib", "ArcFace"]
+    for model in model_names:
+        numeradorRank1Cosine = 0
+        numeradorRank1Euclidean = 0
+        numeradorRank1Euclidean_l2 = 0
+        denominadorRank1 = 0
+        #print("============= " + model + " ===================")
+        for dirpath1, dirnames1, filenames1 in os.walk(params.path):
+            filenames1 = [f for f in filenames1 if not f[0] == '.' and f[-25:] == 'deepFaceInterDistance.txt' and f.split("_")[5] == model]
+            for file1 in sorted(filenames1):
+                distCosineList = []
+                distEuclideanList = []
+                distEuclidean_l2List = []
+                id2List = []
+                fileOutput = open(dirpath1 + "/" + file1)
+                id1 = file1.split("_")[4]
+                for line in fileOutput:
+                    id2List.append(line.split(" ")[5])
+                    distCosineList.append(line.split(" ")[6])
+                    distEuclideanList.append(line.split(" ")[7])
+                    distEuclidean_l2List.append(line.split(" ")[8])
+                positionMinValueRank1CosineList = distCosineList.index(min(distCosineList))
+                positionMinValueRank1EuclideanList = distEuclideanList.index(min(distEuclideanList))
+                positionMinValueRank1Euclidean_l2List = distEuclidean_l2List.index(min(distEuclidean_l2List))
+                #print(file1)
+                #print("positionMinValue " + str(positionMinValueRank1CosineList))
+                if(id1 == id2List[positionMinValueRank1CosineList]):
+                    numeradorRank1Cosine+=1
+                    #print("numeradorRank1 " + str(numeradorRank1Cosine))
+                if(id1 == id2List[positionMinValueRank1EuclideanList]):
+                    numeradorRank1Euclidean+=1
+                if(id1 == id2List[positionMinValueRank1Euclidean_l2List]):
+                    numeradorRank1Euclidean_l2+=1
+                denominadorRank1+=1
+        rank1Cosine = numeradorRank1Cosine/denominadorRank1
+        rank1Euclidean = numeradorRank1Euclidean / denominadorRank1
+        rank1Euclidean_l2 = numeradorRank1Euclidean_l2 / denominadorRank1
+        print("========= RANK1 " + model + " =============")
+        print("Cosine " + str(rank1Cosine))
+        print("Euclidean " + str(rank1Euclidean))
+        print("Euclidean_l2 " + str(rank1Euclidean_l2))
 
 def distanceDeepFaceInterVideo():
     model_names = ["VGG-Face", "Facenet", "OpenFace", "DeepFace", "DeepID", "Dlib", "ArcFace"]
@@ -94,3 +139,5 @@ if __name__ == '__main__':
         distanceDeepFaceInterVideo()
     if params.distIntra:
         distanceDeepFaceIntraVideo()
+    if params.rank1:
+        rank1DeepFace()
