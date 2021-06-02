@@ -57,11 +57,11 @@ def rank1DeepFace():
                 positionMinValueRank1CosineList = distCosineList.index(min(distCosineList))
                 positionMinValueRank1EuclideanList = distEuclideanList.index(min(distEuclideanList))
                 positionMinValueRank1Euclidean_l2List = distEuclidean_l2List.index(min(distEuclidean_l2List))
-                print(file1)
-                print("positionMinValue " + str(positionMinValueRank1CosineList))
+                #print(file1)
+                #print("positionMinValue " + str(positionMinValueRank1CosineList))
                 if(id1 == id2List[positionMinValueRank1CosineList]):
                     numeradorRank1Cosine+=1
-                    print("numeradorRank1 " + str(numeradorRank1Cosine))
+                    #print("numeradorRank1 " + str(numeradorRank1Cosine))
                 if(id1 == id2List[positionMinValueRank1EuclideanList]):
                     numeradorRank1Euclidean+=1
                 if(id1 == id2List[positionMinValueRank1Euclidean_l2List]):
@@ -80,21 +80,21 @@ def distanceDeepFaceInterVideo():
     for model in model_names:
         print("============= " + model + " ===================")
         for dirpath1, dirnames1, filenames1 in os.walk(params.path):
-            filenames1 = [f for f in filenames1 if not f[0] == '.' and f[-18:] == 'deepFaceVector.txt' and f.split("_")[5] == model]
+            filenames1 = [f for f in filenames1 if not f[0] == '.' and f[-18:] == 'deepFaceVector.npy' and f.split("_")[5] == model]
             for file1 in sorted(filenames1):
                 pathWithOutBaseName1, id1 = os.path.split(dirpath1)
                 x, place1 = os.path.split(pathWithOutBaseName1)
                 timeFile1 = file1[0: 12]
-                vectorFeature1 = np.load(dirpath1 + "/" + timeFile1 + "_" + id1 + "_" + model +"_deepFaceVector.npz")
+                vectorFeature1 = np.load(dirpath1 + "/" + timeFile1 + "_" + id1 + "_" + model +"_deepFaceVector.npy")
                 fileOutput = open(dirpath1 + "/" + timeFile1 + "_" + id1 + "_" + model + "_deepFaceInterDistance.txt", "w")
                 for dirpath2, dirnames2, filenames2 in os.walk(params.path):
-                    filenames2 = [f for f in filenames2 if not f[0] == '.' and f[-18:] == 'deepFaceVector.txt' and f.split("_")[5] == model]
+                    filenames2 = [f for f in filenames2 if not f[0] == '.' and f[-18:] == 'deepFaceVector.npy' and f.split("_")[5] == model]
                     for file2 in sorted(filenames2):
                         pathWithOutBaseName2, id2 = os.path.split(dirpath2)
                         y, place2 = os.path.split(pathWithOutBaseName2)
                         timeFile2 = file2[0: 12]
                         if place1 != place2:
-                            vectorFeature2 = np.load(dirpath2 + "/" + timeFile2 + "_" + id2 + "_" + model + "_deepFaceVector.npz")
+                            vectorFeature2 = np.load(dirpath2 + "/" + timeFile2 + "_" + id2 + "_" + model + "_deepFaceVector.npy")
                             print(dirpath1 + "/" + file1 + " ===> " + dirpath2 + "/" + file2 + " ===> " )
                             distanceCosine, distanceEuclidean, distanceEuclidean_l2 = distanceVectorFeature(vectorFeature1, vectorFeature2)
                             fileOutput.write(place1 + " " + timeFile1 + " " + id1 + " " + place2 + " " + timeFile2 + " " + id2 + " " +  str(distanceCosine) + " " +  str(distanceEuclidean)  + " " +  str(distanceEuclidean_l2)  + " \n")
