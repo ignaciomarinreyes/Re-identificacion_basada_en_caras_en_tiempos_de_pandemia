@@ -7,6 +7,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import numpy as np
 from deepface.commons import functions, realtime, distance as dst
+from sklearn.metrics import average_precision_score, precision_recall_curve, auc
 
 params = None
 
@@ -17,6 +18,7 @@ def parse_arguments():
     parser.add_argument('-distIntra', '-dia', action='store_true')
     parser.add_argument('-vector', '-v', action='store_true')
     parser.add_argument('-rank1', '-r1', action='store_true')
+    parser.add_argument('-averagePrecision', '-ap', action='store_true')
     args = parser.parse_args()
     return args
 
@@ -123,6 +125,51 @@ def deepFaceVector():
                 np.save(dirpath + "/" + timeFile + "_" + id + "_" + modelName + "_deepFaceVector", result)
 
 
+def getParameterAveragePrecision(dirpath1, file1):
+    gallery_coincidences = []
+    distQueryGalleryCosine = []
+    distanceEuclidean = []
+    distanceEuclidean_l2 = []
+    fileOutput = open(dirpath1 + "/" + file1)
+    for line in fileOutput:
+        if line.split(" ")[2] == line.split(" ")[5]:
+            gallery_coincidences.append(1)
+        else:
+            gallery_coincidences.append(0)
+        distQueryGalleryCosine.append(float(line.split(" ")[6]))
+        distanceEuclidean.append(float(line.split(" ")[7]))
+        distanceEuclidean_l2.append(float(line.split(" ")[8]))
+    similarityQueryGalleryCosine = 1 - distQueryGalleryCosine / np.amax(distQueryGalleryCosine)
+    similarityQueryGalleryEuclidean = 1 - distanceEuclidean / np.amax(distanceEuclidean)
+    similarityQueryGalleryEuclidean_l2 = 1 - distanceEuclidean_l2 / np.amax(distanceEuclidean_l2)
+    return gallery_coincidences, similarityQueryGalleryCosine, similarityQueryGalleryEuclidean, similarityQueryGalleryEuclidean_l2
+
+def averagePrecisionDeepFace():
+    model_names = ["VGG-Face", "Facenet", "OpenFace", "DeepFace", "DeepID", "Dlib", "ArcFace"]
+    for model in model_names:
+        allAPCosine = []
+        allAPEuclidean = []
+        allAPEuclidean_l2 = []
+        for dirpath1, dirnames1, filenames1 in os.walk(params.path):
+            filenames1 = [f for f in filenames1 if not f[0] == '.' and f[-25:] == 'deepFaceInterDistance.txt' and f.split("_")[5] == model]
+            for file1 in sorted(filenames1):
+                gallery_coincidences, similarityQueryGalleryCosine, similarityQueryGalleryEuclidean, similarityQueryGalleryEuclidean_l2  = getParameterAveragePrecision(dirpath1, file1)
+                apCosine = average_precision_score(gallery_coincidences, similarityQueryGalleryCosine, average='macro', pos_label=1)
+                apEuclidean = average_precision_score(gallery_coincidences, similarityQueryGalleryEuclidean, average='macro', pos_label=1)
+                apEuclidean_l2 = average_precision_score(gallery_coincidences, similarityQueryGalleryEuclidean_l2, average='macro', pos_label=1)
+                allAPCosine.append(apCosine)
+                allAPEuclidean.append(apEuclidean)
+                allAPEuclidean_l2.append(apEuclidean_l2)
+        mAPCosine = np.mean(allAPCosine)
+        mAPEuclidean = np.mean(allAPEuclidean)
+        mAPEuclidean_l2 = np.mean(allAPEuclidean_l2)
+        print("============ mAP " + model + " ====================")
+        print("mAP Coseno " + str(mAPCosine))
+        print("mAP Euclidea " + str(mAPEuclidean))
+        print("mAP Euclidea_l2 " + str(mAPEuclidean_l2))
+        print("===================================================")
+
+
 if __name__ == '__main__':
     params = parse_arguments()
     if params.vector:
@@ -133,3 +180,5 @@ if __name__ == '__main__':
         distanceDeepFaceIntraVideo()
     if params.rank1:
         rank1DeepFace()
+    if params.averagePrecision:
+        averagePrecisionDeepFace()
