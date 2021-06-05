@@ -7,6 +7,7 @@ from  util.utils import *
 from sklearn.preprocessing import normalize
 import argparse
 import numpy as np
+from sklearn.metrics import average_precision_score, precision_recall_curve, auc
 
 params = None
 
@@ -16,9 +17,46 @@ def parse_arguments():
     parser.add_argument('-vector', '-v', action='store_true')
     parser.add_argument('-rank1', '-r1', action='store_true')
     parser.add_argument('-dist', '-d', action='store_true')
+    parser.add_argument('-averagePrecision', '-ap', action='store_true')
     args = parser.parse_args()
     return args
 
+
+def getParameterAveragePrecision(dirpath1, file1):
+    gallery_coincidences = []
+    distQueryGalleryAlign = []
+    distanceQueryGalleryOriginal = []
+    fileOutput = open(dirpath1 + "/" + file1)
+    for line in fileOutput:
+        if line.split(" ")[2] == line.split(" ")[5]:
+            gallery_coincidences.append(1)
+        else:
+            gallery_coincidences.append(0)
+        distQueryGalleryAlign.append(float(line.split(" ")[6]))
+        distanceQueryGalleryOriginal.append(float(line.split(" ")[7]))
+    similarityQueryGalleryAlign = 1 - distQueryGalleryAlign / np.amax(distQueryGalleryAlign)
+    similarityQueryGalleryOriginal = 1 - distanceQueryGalleryOriginal / np.amax(distanceQueryGalleryOriginal)
+    return gallery_coincidences, similarityQueryGalleryAlign, similarityQueryGalleryOriginal
+
+def averagePrecisionAlignedReId():
+    model_names = ["Cuhk03_Resnet50", "DukeMTMCReID_Resnet50", "Market1501_Resnet50", "MSMT17_Resnet50"]
+    for model in model_names:
+        allAPAlign = []
+        allAPOriginal = []
+        for dirpath1, dirnames1, filenames1 in os.walk(params.path):
+            filenames1 = [f for f in filenames1 if not f[0] == '.' and f[-23:] == 'AlignedReIdDistance.txt' and f.split("_")[5] == model.split("_")[0]]
+            for file1 in sorted(filenames1):
+                gallery_coincidences, similarityQueryGalleryAlign, similarityQueryGalleryOriginal = getParameterAveragePrecision(dirpath1, file1)
+                apAlign = average_precision_score(gallery_coincidences, similarityQueryGalleryAlign, average='macro', pos_label=1)
+                apOriginal = average_precision_score(gallery_coincidences, similarityQueryGalleryOriginal, average='macro', pos_label=1)
+                allAPAlign.append(apAlign)
+                allAPOriginal.append(apOriginal)
+        mAPAlign = np.mean(allAPAlign)
+        mAPOriginal = np.mean(allAPOriginal)
+        print("============ mAP " + model + " ====================")
+        print("mAP Align " + str(mAPAlign))
+        print("mAP Original " + str(mAPOriginal))
+        print("===================================================")
 
 # -r1 -p "/Users/ignacio/TFG/TFG/data/Reidentification"
 def rank1AlignedReId():
@@ -148,5 +186,6 @@ if __name__ == '__main__':
         distanceAlignedReIdVector()
     if params.rank1:
         rank1AlignedReId()
-
+    if params.averagePrecision:
+        averagePrecisionAlignedReId()
 
