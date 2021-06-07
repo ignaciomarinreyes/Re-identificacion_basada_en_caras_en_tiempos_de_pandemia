@@ -59,7 +59,7 @@ def rank1DeepFace():
                 positionMinValueRank1CosineList = distCosineList.index(min(distCosineList))
                 positionMinValueRank1EuclideanList = distEuclideanList.index(min(distEuclideanList))
                 positionMinValueRank1Euclidean_l2List = distEuclidean_l2List.index(min(distEuclidean_l2List))
-                #print(file1)
+                #print(dirpath1 + "/" + file1)
                 #print("positionMinValue " + str(positionMinValueRank1CosineList))
                 if(id1 == id2List[positionMinValueRank1CosineList]):
                     numeradorRank1Cosine+=1

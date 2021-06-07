@@ -1,7 +1,6 @@
 import os
 
-#path = "/Users/ignacio/TFG/TFG/data/Reidentification"
-path = "/Users/ignacio/dataTFG/Reidentification"
+path = "/content/gdrive/My Drive/TFG/data/Reidentification"
 
 for dirpath, dirnames, filenames in os.walk(path):
     print("Ruta actual:", dirpath)

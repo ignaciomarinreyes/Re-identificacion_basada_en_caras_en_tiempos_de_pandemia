@@ -43,7 +43,7 @@ flags.DEFINE_boolean('count', False, 'count objects being tracked on screen')
 
 path = sys.argv[1]
 dNorepetition = {}
-umbral = 2
+umbral = 5
 dIncrement = {}
 
 def main(_argv):
@@ -230,22 +230,23 @@ def main(_argv):
             widthBox = int(bbox[2]) - int(bbox[0])
             heightBox = int(bbox[3]) - int(bbox[1])
 
-            #Hacer unico track.track_id
-            newId =""
-            if str(track.track_id) in dIncrement:
-                newId = str(int(dIncrement[str(track.track_id)]) + int(track.track_id))
-            else:
-                newId = str(track.track_id)
-            listIdImagen.append(newId)
-            dNorepetition[newId] = 0 # no están en dNorepetion a 0 y los que si están en dNorepetion a 0
-            #Escribir fichero
-            fileOutput.write(str(newId) + " " +
-                             ("1" if int(bbox[0]) < 0 else str(int(bbox[0]))) + " " +
-                             ("1" if int(bbox[1]) < 0 else str(int(bbox[1]))) + " " +
-                             str(widthBox) + " " + str(heightBox) + " \n")
-        # if enable info flag then print details about each track
-            if FLAGS.info:
-                print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(newId), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))
+            if heightBox > 250:
+                #Hacer unico track.track_id
+                newId =""
+                if str(track.track_id) in dIncrement:
+                    newId = str(int(dIncrement[str(track.track_id)]) + int(track.track_id))
+                else:
+                    newId = str(track.track_id)
+                listIdImagen.append(newId)
+                dNorepetition[newId] = 0 # no están en dNorepetion a 0 y los que si están en dNorepetion a 0
+                #Escribir fichero
+                fileOutput.write(str(newId) + " " +
+                                 ("1" if int(bbox[0]) < 0 else str(int(bbox[0]))) + " " +
+                                 ("1" if int(bbox[1]) < 0 else str(int(bbox[1]))) + " " +
+                                 str(widthBox) + " " + str(heightBox) + " \n")
+            # if enable info flag then print details about each track
+                if FLAGS.info:
+                    print("Tracker ID: {}, Class: {},  BBox Coords (xmin, ymin, xmax, ymax): {}".format(str(newId), class_name, (int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]))))
         fileOutput.close()
         # calculate frames per second of running detections
         fps = 1.0 / (time.time() - start_time)
@@ -269,7 +270,6 @@ def main(_argv):
                     if oldId not in dIncrement:
                         dIncrement[oldId] = 0
                     dIncrement[oldId] = dIncrement[oldId] + 1000
-                    #dNorepetition[newId] = 0
 
     cv2.destroyAllWindows()
 
