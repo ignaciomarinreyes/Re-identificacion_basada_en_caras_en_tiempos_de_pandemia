@@ -33,7 +33,7 @@ public class Utils {
         } catch (Exception e2) {
             e2.printStackTrace();
         }
-        fileRead = new File(this.path + "/" + nameFile.substring(0, pos) + "_result.txt");
+        fileRead = new File(this.path + "/" + nameFile.substring(0, pos) + "_faces.txt");
         if(fileRead.exists()){
             try {
                 fr = new FileReader(fileRead);

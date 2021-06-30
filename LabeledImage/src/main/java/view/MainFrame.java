@@ -20,7 +20,7 @@ import java.util.Arrays;
 
 public class MainFrame extends javax.swing.JFrame {
 
-    private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba";
+    private final String path = "/Users/ignacio/VideosTFG/LPATrail_21";
     //private final String path = "/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result";
     private File[] files;
     private Utils utils;
@@ -122,6 +122,7 @@ public class MainFrame extends javax.swing.JFrame {
             screen.setText("\n=============================== Siguiente Fichero ===============================\n");  
         } else {
             positionImage++;
+            System.out.println(positionImage);
             if(positionImage < files.length){
                 printNextImage();   
                 return;
@@ -137,6 +138,7 @@ public class MainFrame extends javax.swing.JFrame {
                printNextBox();
             } else {
                 positionImage++;
+                System.out.println(positionImage);
                 if(positionImage < files.length){
                     printNextImage();                            
                 } else {
@@ -146,20 +148,20 @@ public class MainFrame extends javax.swing.JFrame {
         }
         
         if (evt.getKeyCode()==KeyEvent.VK_S && control == 1){
-            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
-            screen.setText(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 1 \n");
+            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " " + words[3] + " "  + words[4] + " " + words[5] + " 1 \n");
+            screen.setText(words[0] + " " + words[1] + " " + words[2] + " " + words[3] + " "  + words[4] + " " + words[5] + " 1 \n");
             control = 0;
         }
         
         if (evt.getKeyCode()==KeyEvent.VK_A && control == 1){
-            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
-            screen.setText(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " 0 \n");
+            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " " + words[3] + " "  + words[4] + " " + words[5] + " 0 \n");
+            screen.setText(words[0] + " " + words[1] + " " + words[2] + " " + words[3] + " "  + words[4] + " " + words[5] + " 0 \n");
             control = 0;
         }
         
         if (evt.getKeyCode()==KeyEvent.VK_D && control == 1){
-            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
-            screen.setText(words[0] + " " + words[1] + " " + words[2] + " "  + words[3] + " ND \n");
+            utils.writeFile(words[0] + " " + words[1] + " " + words[2] + " " + words[3] + " "  + words[4] + " " + words[5] + " ND \n");
+            screen.setText(words[0] + " " + words[1] + " " + words[2] + " " + words[3] + " "  + words[4] + " " + words[5] + " ND \n");
             control = 0;
         }
     }//GEN-LAST:event_formKeyPressed
@@ -185,7 +187,7 @@ public class MainFrame extends javax.swing.JFrame {
         Graphics2D graph = image.createGraphics();
         graph.setColor(Color.RED);
         graph.setStroke(new BasicStroke(5));
-        if(!words[0].equals("")) graph.drawRect(Integer.parseInt(words[0]), Integer.parseInt(words[1]), Integer.parseInt(words[2]), Integer.parseInt(words[3])); // int x, int y, int width, int height;
+        if(!words[1].equals("ND")) graph.drawRect(Integer.parseInt(words[2]), Integer.parseInt(words[3]), Integer.parseInt(words[4]), Integer.parseInt(words[5])); // int x, int y, int width, int height;
         graph.dispose();
         
         ImageIcon newIcon = new ImageIcon(img);
