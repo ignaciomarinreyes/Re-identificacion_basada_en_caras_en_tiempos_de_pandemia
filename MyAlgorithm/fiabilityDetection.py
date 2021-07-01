@@ -1,27 +1,22 @@
 import glob
-import numpy as np
 import sklearn.metrics as mt
+import sys
 
-path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_prueba/"
-#path="/Users/ignacio/TFG/TFG/data/LPATrail20-Salida_faces_tagged_and_result/"
+path = sys.argv[1]
 
 def accuracyWearOrNotMask():
     print("========WearOrNotMask========")
     vPred = []
     vTrue = []
-    for pathTxtResult, pathTxtTagged in zip(sorted(glob.glob(path + "*result.txt")), sorted(glob.glob(path + "*tagged.txt"))):
-        fileResult = open(pathTxtResult)
+    for pathTxtFace, pathTxtTagged in zip(sorted(glob.glob(path + "*faces.txt")), sorted(glob.glob(path + "*tagged.txt"))):
+        fileResult = open(pathTxtFace)
         fileTagged = open(pathTxtTagged)
         for lineResult, lineTagged in zip(fileResult, fileTagged):
-            valuesLineResult = lineResult.split(" ")
+            valuesLineFaces = lineResult.split(" ")
             valuesLineTagged = lineTagged.split(" ")
-            if valuesLineTagged[4] != "ND":
-                vTrue.append(int(valuesLineTagged[4]))
-                vPred.append(int(valuesLineResult[4]))
-    print("vPred:")
-    print(vPred)
-    print("vTrue:")
-    print(vTrue)
+            if valuesLineTagged[6] != "ND" and valuesLineFaces[6] != "ND":
+                vTrue.append(int(valuesLineTagged[6]))
+                vPred.append(int(valuesLineFaces[6]))
     print("======Metrics=====")
     print(mt.accuracy_score(vTrue, vPred))
     print("===Confusion matrix =====")
@@ -31,44 +26,40 @@ def accuracyWearMask():
     print("========WearMask========")
     vPred = []
     vTrue = []
-    for pathTxtResult, pathTxtTagged in zip(sorted(glob.glob(path + "*result.txt")), sorted(glob.glob(path + "*tagged.txt"))):
-        fileResult = open(pathTxtResult)
+    for pathTxtFace, pathTxtTagged in zip(sorted(glob.glob(path + "*faces.txt")), sorted(glob.glob(path + "*tagged.txt"))):
+        fileResult = open(pathTxtFace)
         fileTagged = open(pathTxtTagged)
         for lineResult, lineTagged in zip(fileResult, fileTagged):
-            valuesLineResult = lineResult.split(" ")
+            valuesLineFaces = lineResult.split(" ")
             valuesLineTagged = lineTagged.split(" ")
-            if valuesLineTagged[4] != "ND" and int(valuesLineTagged[4]) == 1:
-                vTrue.append(int(valuesLineTagged[4]))
-                vPred.append(int(valuesLineResult[4]))
-    print("vPred:")
-    print(vPred)
-    print("vTrue:")
-    print(vTrue)
+            if valuesLineTagged[6] != "ND" and valuesLineFaces[6] != "ND" and int(valuesLineTagged[6]) == 1:
+                vTrue.append(int(valuesLineTagged[6]))
+                vPred.append(int(valuesLineFaces[6]))
     print("======Metrics=====")
     print(mt.accuracy_score(vTrue, vPred))
-
+    print("===Confusion matrix =====")
+    print(mt.confusion_matrix(vTrue,vPred))
 
 def accuracyNotWearMask():
     print("========NotWearMask========")
     vPred = []
     vTrue = []
-    for pathTxtResult, pathTxtTagged in zip(sorted(glob.glob(path + "*result.txt")), sorted(glob.glob(path + "*tagged.txt"))):
-        fileResult = open(pathTxtResult)
+    for pathTxtFace, pathTxtTagged in zip(sorted(glob.glob(path + "*faces.txt")), sorted(glob.glob(path + "*tagged.txt"))):
+        fileFaces = open(pathTxtFace)
         fileTagged = open(pathTxtTagged)
-        for lineResult, lineTagged in zip(fileResult, fileTagged):
-            valuesLineResult = lineResult.split(" ")
+        for lineResult, lineTagged in zip(fileFaces, fileTagged):
+            valuesLineFaces = lineResult.split(" ")
             valuesLineTagged = lineTagged.split(" ")
-            if valuesLineTagged[4] != "ND" and int(valuesLineTagged[4]) == 0:
-                vTrue.append(int(valuesLineTagged[4]))
-                vPred.append(int(valuesLineResult[4]))
-    print("vPred:")
-    print(vPred)
-    print("vTrue:")
-    print(vTrue)
+            if valuesLineTagged[6] != "ND" and valuesLineFaces[6] != "ND" and int(valuesLineTagged[6]) == 0:
+                vTrue.append(int(valuesLineTagged[6]))
+                vPred.append(int(valuesLineFaces[6]))
     print("======Metrics=====")
     print(mt.accuracy_score(vTrue, vPred))
-
+    print("===Confusion matrix =====")
+    print(mt.confusion_matrix(vTrue,vPred))
 
 accuracyWearOrNotMask()
 accuracyWearMask()
-accuracyNotWearMask() # No hay nadie sin máscara por lo que falla
+accuracyNotWearMask()
+
+# python3 /Users/ignacio/TFG/TFG/MyAlgorithm/fiabilityDetection.py  "/Users/ignacio/VideosTFG/LPATrail_21/"
