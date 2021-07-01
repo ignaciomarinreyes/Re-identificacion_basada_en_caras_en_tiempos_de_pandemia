@@ -1,0 +1,24 @@
+import glob
+import shutil
+import os
+import sys
+
+pathReference = sys.argv[1]
+pathDeleteId = sys.argv[2]
+
+idRepetition = []
+
+print("Empieza")
+for pathDir1 in sorted(glob.glob(pathReference)):
+    pathWithOutBaseName, id1 = os.path.split(pathDir1)
+    idRepetition.append(id1)
+
+for pathDir2 in sorted(glob.glob(pathDeleteId)):
+    pathWithOutBaseName, id2 = os.path.split(pathDir2)
+    if id2 not in idRepetition:
+        shutil.rmtree(pathDir2)
+        print("Eliminado " + pathDir2)
+
+
+print("Acaba")
+

@@ -35,7 +35,6 @@ for pathTxtFace in sorted(glob.glob(path + "*faces.txt")):
         else:
             dGroup[id] = [id, timeFile, timeFile, 1, 1 if dIdsFace[id][6] == '1' else 0, 1 if dIdsFace[id][6] == '0' else 0, 1 if dIdsFace[id][6] == 'ND' else 0]
 
-
 fileGroupDetection = open(path + "groupDetection.txt", "w")
 for id in dGroup:
     fileGroupDetection.write(str(dGroup[id][0]) + " " + str(dGroup[id][1]) + " " + str(dGroup[id][2]) + " " + str(dGroup[id][3]) + " " + str(dGroup[id][4]) + " " + str(dGroup[id][5]) + " " + str(dGroup[id][6]) + " \n")

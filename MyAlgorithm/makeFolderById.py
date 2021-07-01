@@ -4,8 +4,11 @@ import os
 
 pathOrigin = "/content/gdrive/My Drive/TFG/data/"
 pathDestiny = "/content/gdrive/My Drive/TFG/data/Reidentification/"
-places = ["Vegueta", "Tafira"]
-bodies = ["Bodies_LPATrail20", "Bodies_LPATrail19"]
+#places = ["Vegueta", "Tafira", "Universidad"]
+#bodies = ["Bodies_LPATrail20", "Bodies_LPATrail19", "Bodies_LPATrail21"]
+places = ["Universidad"]
+bodies = ["Bodies_LPATrail21"]
+
 
 for place, body in zip(places, bodies):
     if not os.path.exists(pathDestiny + place):

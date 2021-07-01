@@ -11,7 +11,7 @@ siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
 
 Tagged
 ======
-x y ancho alto siOnollevaMascarilla 
+id x y ancho alto siOnollevaMascarilla 
 
 siOnollevaMascarilla, 1 es si lleva, 0 es no lleva
 
