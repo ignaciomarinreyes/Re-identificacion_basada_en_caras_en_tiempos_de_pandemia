@@ -40,3 +40,5 @@ for id in dGroup:
     fileGroupDetection.write(str(dGroup[id][0]) + " " + str(dGroup[id][1]) + " " + str(dGroup[id][2]) + " " + str(dGroup[id][3]) + " " + str(dGroup[id][4]) + " " + str(dGroup[id][5]) + " " + str(dGroup[id][6]) + " \n")
 
 print("Termina")
+
+#python3 "/Users/ignacio/TFG/TFG/MyAlgorithm/groupDetection.py" "/Users/ignacio/VideosTFG/LPATrail_21/"
